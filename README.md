@@ -17,7 +17,7 @@
 
 ## ✨ 特性
 
-- 🎯 为 uview-plus 组件库提供智能代码补全
+- ⚙️为 uview-plus 组件库提供智能代码补全
 - 🚀 支持组件标签、属性、事件的智能提示
 - 📖 悬停显示组件和属性的详细文档说明
 - 🔍 支持动态属性(:prop)和事件(@event)绑定补全
@@ -25,7 +25,7 @@
 - 📄 支持 Vue 和 HTML 文件
 
 
-## 📦 安装
+## ❓ 安装
 
 ### 方法一：VS Code 扩展市场安装（推荐）
 
@@ -41,11 +41,11 @@
 
 ## 📝 更新日志
     
- - ### 💡   [点击这里](module.md)
+ - ### 🔄   [点击这里](module.md)
 
 ## 📞 支持
 
-- 如果你遇到问题，请提交 [Issue](https://gitee.com/my_spaces/uview-plus-helper/issues)
+- 如您遇到问题，请提交 [Issue](https://gitee.com/my_spaces/uview-plus-helper/issues)
 
 ## 📄 许可证
 
