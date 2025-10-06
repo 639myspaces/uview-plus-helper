@@ -1,8 +1,8 @@
 {
   "name": "uview-plus-helper",
   "displayName": "uview plus 代码提示助手",
-  "publisher": "uview plus",
-  "description": "uView Plus helper for Visual Studio Code",
+  "publisher": "uview-plus",
+  "description": "🚀 一个为 uview-plus  组件库提供智能提示的 VS Code 插件",
   "version": "1.0.0",
   "license": "MIT",
   "author": {

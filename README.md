@@ -34,7 +34,7 @@
 
 ### 方法二：离线安装
 
-1. 下载 `.vsix` 文件
+1. 下载 `.vsix` 文件 [Gitee 下载](https://gitee.com/my_spaces/uview-plus-helper/releases)   [GitHub 下载](https://github.com/639myspaces/uview-plus-helper/releases)
 2. 在 VS Code 中按 `Ctrl+Shift+P` 打开命令面板
 3. 输入 `Extensions: Install from VSIX...`
 4. 选择下载的 `.vsix` 文件进行安装
