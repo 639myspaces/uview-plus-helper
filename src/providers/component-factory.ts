@@ -421,7 +421,7 @@ export class UnifiedComponentCompletionProvider
     const link = `https://uview-plus.jiangruyi.com/components//${comLinkName}.html`;
 
     return [
-    `**uview plus _${componentMeta.name}_**\n\n`,
+    ` _${componentMeta.name}_\n\n`,
     `🏷️ 类型: ${item.type || "string"}\n\n`,
     `📝 描述: ${item.description || "-"}\n\n`,
     `📌 版本: ${item.version || "-"}\n\n`,

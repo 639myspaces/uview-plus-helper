@@ -1,7 +1,7 @@
 {
   "name": "uview-plus-helper",
-  "displayName": "uview-plus-helper",
-  "publisher": "uview-plus 助手",
+  "displayName": "uview plus 代码提示助手",
+  "publisher": "uview plus",
   "description": "uView Plus helper for Visual Studio Code",
   "version": "1.0.0",
   "license": "MIT",
@@ -22,7 +22,7 @@
   "icon": "public/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/my_spaces/uview-plus-helper.git"
+    "url": "https://github.com/639myspaces/uview-plus-helper.git"
   },
   "keywords": [
     "uniapp",
@@ -74,7 +74,7 @@
         "uview-helper.version": {
           "type": "string",
           "default": "uview plus",
-          "description": "选择作用的 uViuview plusew 文档版本",
+          "description": "选择作用的 uview plus 文档版本",
           "enum": [
             "uview plus"
           ]
