@@ -2,8 +2,13 @@
   "name": "uview-plus-helper",
   "displayName": "uview-plus-helper",
   "publisher": "uview-plus",
-  "description": "",
+  "description": "uView Plus helper for Visual Studio Code",
   "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "哈哈先生",
+    "url": "https://gitee.com/my_spaces/uview-plus-helper.git"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
@@ -11,7 +16,7 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onLanguage:vue"
   ],
   "main": "./dist/extension.js",
   "icon": "public/logo.png",
@@ -19,6 +24,15 @@
     "type": "git",
     "url": "https://gitee.com/my_spaces/uview-plus-helper.git"
   },
+  "keywords": [
+    "uniapp",
+    "uview",
+    "uview plus",
+    "tnt",
+    "vue",
+    "extension",
+    "vscode"
+  ],
   "contributes": {
     "commands": [
       {
@@ -33,17 +47,40 @@
     "languages": [
       {
         "id": "vue",
-        "extensions": [".vue"],
-        "aliases": ["Vue", "vue"]
+        "extensions": [
+          ".vue"
+        ],
+        "aliases": [
+          "Vue",
+          "vue"
+        ]
       },
       {
         "id": "html",
-        "extensions": [".html"],
-        "aliases": ["HTML", "html"]
+        "extensions": [
+          ".html"
+        ],
+        "aliases": [
+          "HTML",
+          "html"
+        ]
       }
     ],
     "grammars": [],
-    "configuration": {}
+    "configuration": {
+      "type": "object",
+      "title": "uview plus 助手",
+      "properties": {
+        "uview-helper.version": {
+          "type": "string",
+          "default": "uview plus",
+          "description": "选择作用的 uViuview plusew 文档版本",
+          "enum": [
+            "uview plus"
+          ]
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
