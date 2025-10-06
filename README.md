@@ -1,7 +1,7 @@
 <p align="center">
     <img alt="logo" src="https://uviewui.com/common/logo.png" width="200">
 </p>
-<h1 align="center">uview-plus 助手</h1>
+<h1 align="center">uview-plus 代码提示助手</h1>
 
 <p align="center">🚀 一个为 uview-plus  组件库提供智能提示的 VS Code 插件</p>
 
