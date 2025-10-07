@@ -1,9 +1,9 @@
 {
   "name": "uview-plus-helper",
-  "displayName": "uview plus 代码提示助手",
+  "displayName": "uview-plus 代码提示助手",
   "publisher": "uview-plus",
   "description": "🚀 一个为 uview-plus  组件库提供智能提示的 VS Code 插件",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "哈哈先生",
@@ -93,8 +93,12 @@
     "grammars": []
   },
   "scripts": {
-    "vscode:prepublish": "npm run package",
+    "dev": "npm run package",
     "build": "vsce package",
+    "push": "vsce publish 1.0.0",
+    "patch": "vsce publish patch",
+    "minor": "vsce publish minor",
+    "major": "vsce publish major",
     "compile": "webpack",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
