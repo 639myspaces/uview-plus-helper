@@ -7,13 +7,11 @@
 
 ## 📖 项目概述
 
- <text> 
- 🦄  uview-plus 助手插件专为使用 uview plus + Vue 3.0 + ts 开发的用户设计。鉴于原版 uView 暂未支持 Vue 3.0，而 uview plus 作为其 Vue 3.0 兼容版本已成为多数开发者的选择，同时现有 uview-helper 插件仅支持传统 u- 标签，无法满足 uview plus 特有的 up- 标签需求。
- </text>
+
+ 🦄  uview-plus 助手插件专为使用 uview plus + Vue 3.0 + ts 开发的用户设计。鉴于原版 uView 暂未支持 Vue 3.0，而 uview plus 作为其 Vue 3.0 兼容版本已成为多数开发者的选择，同时现有 uview-helper 插件仅支持传统 ` u- ` 标签，无法满足 uview plus 特有的 ` up- ` 标签需求。
  <br/>
- <text> 
-🦄  因此uview-plus 助手 是一款专为 uview plus  组件库打造的 VS Code 智能提示插件，旨在提升开发者在使用 uview plus  组件时的编码体验和效率。该插件通过分析 uview plus 组件的文档，为开发者提供精准的代码补全、悬停提示和属性验证等功能。
- </text>
+ 🦄  因此uview-plus 助手 是一款专为 uview plus  组件库打造的 VS Code 智能提示插件，旨在提升开发者在使用 uview plus  组件时的编码体验和效率。该插件通过分析 uview plus 组件的文档，为开发者提供精准的代码补全、悬停提示和属性验证等功能。
+
 
 ## ✨ 特性
 
