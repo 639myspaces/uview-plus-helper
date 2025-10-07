@@ -21,9 +21,12 @@ import {
  * 注册所有 uview-plus 组件的智能提示功能
  * 
  * @param context VS Code 扩展上下文，用于注册提供者和管理订阅生命周期
- * @returns Promise<void> 注册完成后的 Promise 对象
+ * @returns Promise<vscode.Disposable[]> 注册的订阅列表，用于后续管理和清理
  */
-export async function registerAll(context: vscode.ExtensionContext) {
+export async function registerAll(context: vscode.ExtensionContext): Promise<vscode.Disposable[]> {
+  // 存储注册的订阅，用于返回
+  const subscriptions: vscode.Disposable[] = [];
+  
   // 打印正在注册的组件数量信息
   console.log(`注册数量： ${COMPONENT_MAP.length} 个components`);
 
@@ -37,18 +40,18 @@ export async function registerAll(context: vscode.ExtensionContext) {
     ];
 
     // 注册组件补全提供者，并指定触发补全的字符
-    context.subscriptions.push(
-      vscode.languages.registerCompletionItemProvider(
-        selector,
-        unifiedProvider,
-        "<", // 标签开始
-        "\n", // 换行
-        "\t", // 制表符
-        " ", // 空格
-        ":", // 冒号
-        "@"  // 事件前缀
-      )
+    const completionProvider = vscode.languages.registerCompletionItemProvider(
+      selector,
+      unifiedProvider,
+      "<", // 标签开始
+      "\n", // 换行
+      "\t", // 制表符
+      " ", // 空格
+      ":", // 冒号
+      "@"  // 事件前缀
     );
+    
+    subscriptions.push(completionProvider);
 
     console.log("读取组件文件完成");
 
@@ -56,7 +59,7 @@ export async function registerAll(context: vscode.ExtensionContext) {
     for (const { tag, docSource } of COMPONENT_MAP) {
       try {
         // 提取组件名称（去掉 up- 或 u- 前缀）
-        const componentName = tag.replace(/^(up-|u-)/, "");/^(up-|u-)/
+        const componentName = tag.replace(/^(up-|u-)/, "");
         // 加载组件的元数据（包含属性、事件等信息）
         const componentMeta = loadComponentSchema(componentName, docSource);
         // 创建组件悬停提供者实例
@@ -68,9 +71,8 @@ export async function registerAll(context: vscode.ExtensionContext) {
         ];
 
         // 注册组件悬停提供者
-        context.subscriptions.push(
-          vscode.languages.registerHoverProvider(selector, hover)
-        );
+        const hoverProvider = vscode.languages.registerHoverProvider(selector, hover);
+        subscriptions.push(hoverProvider);
        // console.log(`注册悬停提示：${tag}`);
       } catch (error) {
         // 单个组件注册失败不应影响其他组件
@@ -83,4 +85,6 @@ export async function registerAll(context: vscode.ExtensionContext) {
     // 捕获统一补全提供者注册失败的异常
     console.error("Failed to register unified completion provider:", error);
   }
+  
+  return subscriptions;
 }
