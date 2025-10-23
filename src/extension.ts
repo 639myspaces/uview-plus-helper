@@ -1,5 +1,5 @@
 /**
- * uview-plus-helper VS Code 扩展的主入口文件
+ * uView Next-helper VS Code 扩展的主入口文件
  * 负责扩展的激活和停用生命周期管理，以及组件相关功能的注册
  */
 import * as vscode from 'vscode';
@@ -28,12 +28,12 @@ async function registerComponents(context: vscode.ExtensionContext) {
         // 将订阅添加到上下文，由VSCode管理生命周期
         subscriptions.forEach(sub => context.subscriptions.push(sub));
       }
-      console.log('✅ uview-plus 提示助手 组件注册完成!');
+      console.log('✅ uView Next 提示助手 组件注册完成!');
     } catch (error) {
-      console.error('❌ uview-plus 提示助手 组件注册失败:', error);
+      console.error('❌ uView Next 提示助手 组件注册失败:', error);
     }
   } else {
-    console.log('ℹ️ uview-plus 提示助手 智能提示已关闭');
+    console.log('ℹ️ uView Next 提示助手 智能提示已关闭');
   }
 }
 
@@ -44,7 +44,7 @@ async function registerComponents(context: vscode.ExtensionContext) {
 function registerCommands(context: vscode.ExtensionContext) {
   // 注册切换智能提示命令
   context.subscriptions.push(
-    vscode.commands.registerCommand('uview-plus-helper.toggleIntellisense', async () => {
+    vscode.commands.registerCommand('uView Next-helper.toggleIntellisense', async () => {
       isIntellisenseEnabled = !isIntellisenseEnabled;
       
       // 重新注册组件
@@ -66,7 +66,7 @@ function registerCommands(context: vscode.ExtensionContext) {
  */
 export async function activate(context: vscode.ExtensionContext) {
   // 记录扩展激活日志
-  console.log('🚀 uview-plus 提示助手 已激活!');
+  console.log('🚀 uView Next 提示助手 已激活!');
   
   // 注册命令
   registerCommands(context);
@@ -86,5 +86,5 @@ export async function deactivate() {
   providerSubscriptions.forEach(sub => sub.dispose());
   
   // 记录扩展停用日志
-  console.log('🚫 uview-plus 提示助手 已停用!');
+  console.log('🚫 uView Next 提示助手 已停用!');
 }

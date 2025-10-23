@@ -1,43 +1,31 @@
-# Cropper 图片裁剪 📎 3.4.85
+图片剪裁组件，支持图片选择、裁剪、旋转等功能，适用于头像上传、图片编辑等场景。
 
-图片裁剪组件，支持手势操作、旋转、缩放、裁剪等功能，适用于头像裁剪等场景。
 
-## API
+### [#](http://118.25.198.98/components/cropper.html#api) API
 
-### Props
+### [#](http://118.25.198.98/components/cropper.html#props) Props
 
-| 参数 | 说明 | 类型 | 默认值 | 可选值 |
-|-----|-----|-----|-----|-----|
-| canChangeSize | 是否允许调整裁剪区域大小 | boolean | false | true/false |
-| areaWidth | 裁剪区域宽度 | string | 300rpx | - |
-| areaHeight | 裁剪区域高度 | string | 300rpx | - |
-| exportWidth | 导出图片宽度 | string | 260rpx | - |
-| exportHeight | 导出图片高度 | string | 260rpx | - |
-| minScale | 最小缩放比例 | number | 0.3 | - |
-| maxScale | 最大缩放比例 | number | 4 | - |
-| canScale | 是否允许缩放 | boolean | true | true/false |
-| canRotate | 是否允许旋转 | boolean | true | true/false |
-| quality | 图片质量 | number | 0.9 | 0-1 |
-| noTab | 是否隐藏底部操作栏 | boolean | true | true/false |
+|参数|说明|类型|默认值|可选值|
+|---|---|---|---|---|
+|shape|裁剪框形状|String|square|square / circle|
+|autoChoose|每次显示时是否自动打开选择图片|Boolean|false|true / false|
+|rectWidth|裁剪框宽度，单位px|String / Number|200|\-|
+|rectHeight|裁剪框高度，单位px|String / Number|200|\-|
+|width|输出图片宽度，单位px|String / Number|200|\-|
+|height|输出图片高度，单位px|String / Number|200|\-|
+|fileType|输出图片格式|String|jpg|jpg / png|
+|showGrid|是否显示网格线|Boolean|true|true / false|
+|openType 3.6.43|微信小程序开放能力，设置为chooseAvatar后，可选择微信头像|String|''|chooseAvatar|
+|watermark 3.5.41|水印配置对象|Object|{}|\-|
 
-### Events
+### [#](http://118.25.198.98/components/cropper.html#events) Events
 
-| 事件名 | 说明 | 回调参数 |
-|-----|-----|-----|
-| confirm | 裁剪完成时触发 | { avatar, path, index, data } |
-| avtinit | 组件初始化完成时触发 | - |
+|事件名|说明|回调参数|
+|---|---|---|
+|change|选择图片时触发|imagePath: 原始图片路径|
+|open|打开裁剪弹窗时触发|\-|
+|close|关闭裁剪弹窗时触发|\-|
+|confirm|确认裁剪时触发|result: 裁剪后的图片临时路径|
+|error 3.5.41|出错时触发|message: 错误信息|
 
-### Slots
-
-| 名称 | 说明 |
-|-----|-----|
-| default | 触发裁剪的元素，点击该插槽内容时会打开裁剪界面 |
-
-### 方法
-
-| 方法名 | 说明 | 参数 |
-|-----|-----|-----|
-| chooseImage | 打开图片选择器并开始裁剪 | (index, params, data)<br>index: 索引标识<br>params: 配置参数对象<br>data: 自定义数据 |
-| close | 关闭裁剪界面 | - |
-| rotate | 旋转图片 | - |
-| preview | 预览裁剪结果 | - |
+上次更新时间: 2025/9/3 10:11:29

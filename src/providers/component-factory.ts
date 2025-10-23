@@ -51,7 +51,7 @@ export class UnifiedComponentCompletionProvider
     for (const { tag, docSource } of COMPONENT_MAP) {
       try {
         // 提取组件名称（去掉up-或u-前缀）
-        const componentName = tag.replace(/^(up-|u-)/, "");
+        const componentName = tag.replace("u-", "");
         // 加载组件的元数据，包含属性、事件等信息
         const componentMeta = loadComponentSchema(componentName, docSource);
         // 存储原始标签名和组件名（支持不带前缀的形式）
@@ -94,8 +94,7 @@ export class UnifiedComponentCompletionProvider
       const componentMeta = 
         this.componentMap.get(currentTagName) ||
         this.componentMap.get(`u-${currentTagName}`) ||
-        this.componentMap.get(`up-${currentTagName}`) ||
-        this.componentMap.get(currentTagName.replace(/^(up-|u-)/, ""));
+        this.componentMap.get(currentTagName.replace(/^u-/, ""));
       if (componentMeta) {
         // 提供该组件的属性、事件等补全项
         return this.provideAttributeCompletionItems(
@@ -122,7 +121,7 @@ export class UnifiedComponentCompletionProvider
     // 遍历所有注册的组件
     for (const [tagName, componentMeta] of this.componentMap.entries()) {
       // 只处理 up- 或 u- 前缀的标签名，并根据filter过滤
-      if ((tagName.startsWith("up-") || tagName.startsWith("u-")) && (!filter || tagName.includes(filter))) {
+      if (tagName.startsWith("u-") && (!filter || tagName.includes(filter))) {
         // 创建补全项
         const item = new vscode.CompletionItem(
           tagName,
@@ -140,7 +139,7 @@ export class UnifiedComponentCompletionProvider
         // 设置标签显示信息
         item.label = {
           label: tagName,
-          description: "uview-plus 助手",
+          description: "uView Next 助手",
         };
         // 设置排序优先级，使其在补全列表顶部显示
         item.sortText = "0";
@@ -208,7 +207,7 @@ export class UnifiedComponentCompletionProvider
       // 设置标签显示信息
       kebabItem.label = {
         label: kebabName,
-        description: "Props uview-plus",
+        description: "Props uView Next",
       };
       // 设置排序优先级
       kebabItem.sortText = "0";
@@ -252,7 +251,7 @@ export class UnifiedComponentCompletionProvider
       );
       kebabEventItem.label = {
         label: `@${kebabEventName}`,
-        description: "Events uview-plus",
+        description: "Events uView Next",
       };
       kebabEventItem.sortText = "0";
       kebabEventItem.preselect = true;
@@ -283,7 +282,7 @@ export class UnifiedComponentCompletionProvider
       );
       kebabClassItem.label = {
         label: `${kebabClassName}`,
-        description: "uview-plus 提示助手4",
+        description: "uView Next 提示助手4",
       };
       kebabClassItem.sortText = "0";
       kebabClassItem.preselect = true;
@@ -417,8 +416,8 @@ export class UnifiedComponentCompletionProvider
   private generateDocumentation(componentMeta: any, item: any): string {
     const comLinkName =
       COMPONENT_MAP.find((item) => item.tag === componentMeta.name)
-        ?.docSource || componentMeta.name.replace(/^(up-|u-)/, "");
-    const link = `https://uview-plus.jiangruyi.com/components//${comLinkName}.html`;
+        ?.docSource || componentMeta.name.replace("u-", "");
+    const link = `http://118.25.198.98/components//${comLinkName}.html`;
 
     return [
     ` _${componentMeta.name}_\n\n`,

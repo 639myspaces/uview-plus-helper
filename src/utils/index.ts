@@ -1,8 +1,8 @@
 /**
- * uview-plus-helper VS Code 扩展 - 工具函数集合
+ * uView Next-helper VS Code 扩展 - 工具函数集合
  * 
  * 此模块包含扩展中使用的通用工具函数、组件悬停提供者和诊断提供者基类，
- * 用于支持 uview-plus 组件库的智能提示、文档悬停和代码诊断功能。
+ * 用于支持 uView Next 组件库的智能提示、文档悬停和代码诊断功能。
  */
 import * as vscode from "vscode";
 
@@ -191,7 +191,7 @@ export function getAttributeInfoAtPosition(
 /**
  * 通用组件悬停提供者基类
  * 
- * 为 uview-plus 组件提供智能悬停提示功能，支持驼峰式和短横线式的属性和事件命名格式，
+ * 为 uView Next 组件提供智能悬停提示功能，支持驼峰式和短横线式的属性和事件命名格式，
  * 可以显示组件文档、属性说明、事件说明和外部样式类说明。
  */
 export abstract class ComponentHoverProvider implements vscode.HoverProvider {
@@ -203,7 +203,7 @@ export abstract class ComponentHoverProvider implements vscode.HoverProvider {
   
   /**
    * 组件名称
-   * 如 'up-button' 等 uview-plus 组件的标签名
+   * 如 'up-button' 等 uView Next 组件的标签名
    */
   protected abstract componentName: string;
 
@@ -238,9 +238,9 @@ export abstract class ComponentHoverProvider implements vscode.HoverProvider {
       // 修复组件名称匹配逻辑 - 支持多种标签名格式
       if (
         attrInfo &&
-        (attrInfo.tagName === this.componentName.replace(/^(up-|u-)/, "") ||
+        (attrInfo.tagName === this.componentName.replace("u-", "") ||
           attrInfo.tagName === kebabComponentName ||
-          attrInfo.tagName === kebabComponentName.replace(/^(up-|u-)/, ""))
+          attrInfo.tagName === kebabComponentName.replace("u-", ""))
       ) {
         // 处理外部样式类属性
         if (this.componentMeta.externalClasses) {
@@ -459,7 +459,7 @@ export abstract class ComponentDiagnosticProvider {
               severity: vscode.DiagnosticSeverity.Error,
               range: range,
               message: `无效的 ${propName} 属性值: ${staticAttrMatch[1]}`,
-              source: "uview-plus helper",
+              source: "uView Next helper",
             });
           }
 
@@ -472,7 +472,7 @@ export abstract class ComponentDiagnosticProvider {
               severity: vscode.DiagnosticSeverity.Warning,
               range: range,
               message: `动态属性 :${propName} 使用了静态值，建议使用变量`,
-              source: "uview-plus 提示助手",
+              source: "uView Next 提示助手",
             });
           }
         });
@@ -501,7 +501,7 @@ export abstract class ComponentDiagnosticProvider {
           severity: vscode.DiagnosticSeverity.Warning,
           range: range,
           message: `重复的属性: ${originalRawName} 和 ${rawName} 都映射到 ${normalizedName}`,
-          source: "uview-plus 提示助手",
+          source: "uView Next 提示助手",
         });
       } else {
         attrMap.set(normalizedName, rawName);
@@ -530,7 +530,7 @@ export abstract class ComponentDiagnosticProvider {
               severity: vscode.DiagnosticSeverity.Error,
               range: range,
               message: `事件 ${eventName} 缺少处理器`,
-              source: "uview-plus 提示助手",
+              source: "uView Next 提示助手",
             });
           } else if (
             !handler.includes("(") &&
@@ -541,7 +541,7 @@ export abstract class ComponentDiagnosticProvider {
               severity: vscode.DiagnosticSeverity.Warning,
               range: range,
               message: `事件处理器应包含括号: ${handler}()`,
-              source: "uview-plus 提示助手",
+              source: "uView Next 提示助手",
             });
           }
         }
@@ -572,7 +572,7 @@ export abstract class ComponentDiagnosticProvider {
                 severity: vscode.DiagnosticSeverity.Warning,
                 range: range,
                 message: `布尔属性 ${propName} 应使用简写或动态绑定`,
-                source: "uview-plus 提示助手",
+                source: "uView Next 提示助手",
               });
             }
           }

@@ -1,59 +1,58 @@
-# Barcode 条形码
+基于 [JsBarcode.js (opens new window)](https://github.com/lindell/JsBarcode) 库实现的条形码生成组件，支持多种条形码格式。
 
-Barcode 组件用于生成和显示各种格式的条形码，支持自定义尺寸、颜色、文本等属性。
+## [#](http://118.25.198.98/components/barcode.html#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF) 使用场景
+
+-   商品标签、库存管理等需要条形码的场景
+-   会员卡、优惠券等需要条形码标识的场景
+-   物流、快递等需要条形码追踪的场景
+-   任何需要生成和显示条形码的应用场景
 
 
-## 支持的条码格式
+## [#](http://118.25.198.98/components/barcode.html#api) API
 
-| 格式 | 说明 |
-| ---- | ---- |
-| CODE128 | 最常用的条形码格式，可编码所有ASCII字符 |
-| EAN13 | 国际商品条形码，13位数字 |
-| EAN8 | 国际商品条形码，8位数字 |
-| CODE39 | 39字符条形码，常用于工业领域 |
-| UPC | 统一产品代码 |
-| ITF | 交叉二五码，常用于物流行业 |
-| MSI | MSI Plessey条码，用于仓库和库存管理 |
-| pharmacode | 药品包装上使用的条码 |
-| codabar | 医疗和图书馆使用的条码 |
+### [#](http://118.25.198.98/components/barcode.html#props) Props
 
-## 注意事项
+|参数|说明|类型|默认值|可选值|
+|---|---|---|---|---|
+|value|条形码内容|String|\-|\-|
+|format|条形码类型|String|CODE128|CODE128|
+|width|条形码宽度|String|Number|2|
+|height|条形码高度|String|Number|80|
+|color|条形码颜色|String|#000000|\-|
+|backgroundColor|背景颜色|String|#ffffff|\-|
+|displayValue|是否显示文本|Boolean|true|true|
+|textPosition|文本位置|String|bottom|top|
+|canvasType|画布类型|String|2d|2d|
+|fontOptions|字体选项|String|\-|\-|
+|font|字体|String|Arial|\-|
+|textAlign|文本对齐方式|String|center|left|
+|textMargin|文本边距|Number|5|\-|
+|fontSize|字体大小|Number|14|\-|
+|customStyle|自定义样式|Object|String|\-|
+|mode 3.6.1|生成模式，图片模式不存在层级问题|String|image|canvas|
 
-1. 条形码内容需要符合对应格式的规范，否则会报错
-2. 使用Canvas渲染时性能更好，但生成图片可以保存到相册
-3. 文本显示时会自动根据条码尺寸调整位置
-4. 不同格式的条码对内容要求不同，请根据实际需求选择格式
+### [#](http://118.25.198.98/components/barcode.html#%E6%94%AF%E6%8C%81%E7%9A%84%E6%9D%A1%E5%BD%A2%E7%A0%81%E7%B1%BB%E5%9E%8B) 支持的条形码类型
 
-## API
+根据 [JsBarcode.js (opens new window)](https://github.com/lindell/JsBarcode) 库，支持以下条形码类型：
 
-### Props
+|类型|说明|适用场景|字符要求|
+|---|---|---|---|
+|CODE128|通用条形码，支持所有ASCII字符|商品标签、库存管理|任意ASCII字符|
+|CODE39|工业条形码，支持数字、字母和特殊字符|工业标识、物流|数字、字母、特殊字符|
+|CODE93|高密度条形码，CODE39的改进版|工业标识、物流|数字、字母、特殊字符|
+|EAN13|欧洲商品编码，13位数字|零售商品、超市|13位数字|
+|EAN8|欧洲商品编码，8位数字|小型商品|8位数字|
+|EAN5|欧洲商品编码，5位数字|图书、杂志|5位数字|
+|EAN2|欧洲商品编码，2位数字|图书、杂志|2位数字|
+|UPC|美国商品编码，12位数字|北美零售商品|12位数字|
+|ITF|交插二五码，仅数字|物流、仓储|数字|
+|ITF14|交插二五码，14位数字|物流、仓储|14位数字|
+|MSI|MSI条形码，仅数字|库存管理|数字|
+|MSI10|MSI条形码，10位数字|库存管理|10位数字|
+|MSI11|MSI条形码，11位数字|库存管理|11位数字|
+|MSI1010|MSI条形码，10位数字+校验位|库存管理|10位数字|
+|MSI1110|MSI条形码，11位数字+校验位|库存管理|11位数字|
+|Pharmacode|药品编码，仅数字|药品标识|数字|
+|Codabar|库德巴码，支持数字、字母和特殊字符|图书馆、医疗|数字、字母、特殊字符|
 
-| 参数 | 说明 | 类型 | 默认值 | 可选值 |
-| ---- | ---- | ---- | ------ | ------ |
-| value | 条码值 | string \| number | - | - |
-| format | 条码格式 | string | auto | CODE128/CODE128A/CODE128B/CODE128C/EAN13/EAN8/EAN5/EAN2/UPC/UPCA/UPCE/CODE39/ITF/ITF14/MSI/MSI10/MSI11/MSI1010/MSI1110/pharmacode/codabar |
-| width | 宽度 | number | 200 | - |
-| height | 高度 | number | 80 | - |
-| displayValue | 是否显示文本 | boolean | true | false |
-| text | 文本内容 | string | - | - |
-| fontOptions | 字体选项 | string | - | - |
-| font | 字体 | string | monospace | - |
-| textAlign | 文本对齐方式 | string | center | left/center/right |
-| textPosition | 文本位置 | string | bottom | top/bottom |
-| textMargin | 文本边距 | number | 2 | - |
-| fontSize | 字体大小 | number | 14 | - |
-| background | 背景色 | string | #ffffff | - |
-| lineColor | 条码颜色 | string | #000000 | - |
-| margin | 边距 | number | 10 | - |
-| marginTop | 上边距 | number | undefined | - |
-| marginBottom | 下边距 | number | undefined | - |
-| marginLeft | 左边距 | number | undefined | - |
-| marginRight | 右边距 | number | undefined | - |
-| useCanvas | 使用canvas还是生成图片 | boolean | true | false |
-
-### Events
-
-| 事件名 | 说明 | 回调参数 |
-| ------ | ---- | ------- |
-| rendered | 渲染完成时触发 | { type: 'canvas' \| 'image', id?: string, value?: string, path?: string } |
-| error | 渲染出错时触发 | error |
+上次更新时间: 2025/9/1 13:21:54

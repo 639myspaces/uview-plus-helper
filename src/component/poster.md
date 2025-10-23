@@ -1,74 +1,53 @@
-# Poster 海报生成 3.5.10
+## [#](http://118.25.198.98/components/poster.html#poster-%E6%B5%B7%E6%8A%A5%E7%94%9F%E6%88%90%E5%99%A8-3-6-0) Poster 海报生成器 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/poster.html#api)
 
-该组件用于生成海报图片，支持自定义背景、文本、图片、二维码等元素。（部分兼容l-painter组件）。
+海报生成组件，提供了强大的海报生成能力，支持文字、图片、二维码，可以轻松生成各种精美的海报。
 
-## API
+## [#](http://118.25.198.98/components/poster.html#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF) 使用场景
 
-### Props
+-   生成商品海报、活动海报、分享图片等
+-   动态生成包含文字、图片、矩形、二维码的复杂布局
+-   支持渐变背景、阴影效果、圆角边框等样式
+-   适用于电商、社交、营销等需要生成图片的场景
+-   配合可视化设计工具，实现所见即所得的海报设计
 
-| 参数名 | 说明 | 类型 | 默认值 | 可选值 |
-| --- | --- | --- | --- | --- |
-| json | 海报配置JSON数据 | Object | - | - |
 
-### json 配置项
+## [#](http://118.25.198.98/components/poster.html#api) API
 
-| 参数名 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| css | 海报容器样式 | Object | - |
-| views | 海报元素列表 | Array | - |
+### [#](http://118.25.198.98/components/poster.html#props) Props
 
-### json.css 容器样式
+|参数|说明|类型|默认值|可选值|
+|---|---|---|---|---|
+|showPreview|是否显示预览|Boolean|true|true|
+|width|预览宽度|Number|String|375|
+|height|预览高度|Number|String|\-|
+|mode|预览模式|String|"widthFix"|widthFix|
+|palette|海报配置对象|Object|() => \[\]|\-|
+|scaleRatio|缩放比，会在传入的palette中统一乘以该缩放比|Number|1|\-|
+|widthPixels|宽度像素，设置后会覆盖scaleRatio|Number|0|\-|
+|dirty|启用脏检查，默认false|Boolean|false|true|
+|fileType|文件类型|String|"jpg"|jpg|
+|quality|质量|Number|1|0-1|
 
-| 参数名 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| width | 海报宽度 | String | 750rpx |
-| height | 海报高度 | String | 1114rpx |
-| background | 背景颜色或图片链接 | String | - |
+### [#](http://118.25.198.98/components/poster.html#events) Events
 
-### json.views 元素配置
+|事件名|说明|回调参数|
+|---|---|---|
+|success|图片生成成功时触发|(path: String) 生成的图片路径|
+|error|图片生成失败时触发|(error: Object) 错误信息|
 
-| 参数名 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| type | 元素类型 | String | - |
-| text | 文本内容(仅text类型) | String | - |
-| src | 图片地址(仅image/qrcode类型) | String | - |
-| css | 元素样式 | Object | - |
+### [#](http://118.25.198.98/components/poster.html#methods) Methods
 
-### views元素类型
+|方法名|说明|参数|
+|---|---|---|
+|render|手动触发渲染|(data?: Object) 海报数据|
 
-| 类型 | 说明 |
-| --- | --- |
-| text | 文本元素 |
-| image | 图片元素 |
-| qrcode | 二维码元素 |
-| view | 矩形容器元素 |
+## [#](http://118.25.198.98/components/poster.html#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9) 注意事项
 
-### css 样式属性
+1.  **图片资源**：确保图片URL可访问，建议使用HTTPS链接
+2.  **字体支持**：某些字体在小程序环境下可能不支持，建议使用系统默认字体
+3.  **性能优化**：大量元素时建议合理设置zindex，避免频繁重绘
+4.  **尺寸单位**：支持px、rpx、%等CSS单位
+5.  **渐变支持**：支持linear-gradient和radial-gradient语法
+6.  **阴影限制**：不支持spread参数，格式为"x y blur color"
 
-| 参数名 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| position | 定位方式 | String | absolute |
-| left | 距离左边距离 | String | 0rpx |
-| top | 距离顶部距离 | String | 0rpx |
-| width | 元素宽度 | String | - |
-| height | 元素高度 | String | - |
-| color | 文字颜色(仅text类型) | String | #000 |
-| fontSize | 文字大小(仅text类型) | String | - |
-| fontWeight | 文字粗细(仅text类型) | String | normal |
-| lineHeight | 行高(仅text类型) | String | - |
-| lineClamp | 最大行数(仅text类型) | Number | - |
-| background | 背景颜色(仅view类型) | String | - |
-| radius | 圆角大小 | String | - |
-| shadow | 阴影效果 | String | - |
-
-### Event
-
-| 事件名 | 说明 | 回调参数 |
-| --- | --- | --- |
-| export | 海报导出完成时触发 | result |
-
-### Methods
-
-| 方法名 | 说明 | 参数 | 返回值 |
-| --- | --- | --- | --- |
-| exportImage | 导出海报图片 | - | Promise |
+上次更新时间: 2025/9/20 08:47:51

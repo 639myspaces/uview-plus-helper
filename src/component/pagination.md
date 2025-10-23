@@ -1,44 +1,51 @@
-# Pagination 分页器 <sup style="color: #1989fa;">3.4.30</sup>
+该组件用于分隔长列表，每次只加载一个页面。适用于数据量较大的场景，通过分页的方式提升用户体验和页面性能。
 
-分页器组件主要用于数据分页场景
+注意
 
-## API
+VUE2版本下，微信小程序会控制台会报 `More than one slot named "page" are found inside a single component instance` 的警告，VUE3版本无问题，推荐使用VUE3
 
-### Props 参数说明
 
-| 参数 | 说明 | 类型 | 默认值 | 可选值 |
-| --- | --- | --- | --- | --- |
-| currentPage | 当前页码 | `Number` | `1` | - |
-| pageSize | 每页条目数 | `Number` | `10` | - |
-| total | 总数据条目数 | `Number` | `0` | - |
-| prevText | 上一页按钮自定义文本 | `String` | `''` | - |
-| nextText | 下一页按钮自定义文本 | `String` | `''` | - |
-| buttonBgColor | 分页按钮的背景颜色 | `String` | `#f5f7fa` | - |
-| buttonBorderColor | 分页按钮的边框颜色 | `String` | `#dcdfe6` | - |
-| pageSizes | 每页显示条目个数选择器的选项 | `Array` | `[10, 20, 30, 40, 50]` | - |
-| layout | 组件布局，子组件名用逗号分隔。支持：`prev`, `pager`, `next`, `total` | `String` | `'prev, pager, next'` | - |
-| hideOnSinglePage | 是否在只有一页时隐藏分页器 | `Boolean` | `false` | `true / false` |
+### [#](http://118.25.198.98/components/pagination.html#api) API
 
-### Events 事件说明
+### [#](http://118.25.198.98/components/pagination.html#props) Props
 
-| 事件名 | 说明 | 参数 |
-| --- | --- | --- |
-| @update:currentPage | 页码改变时触发（v-model） | `page` |
-| @update:pageSize | 每页数量改变时触发（v-model） | `size` |
-| @current-change | 页码改变时触发 | `page` |
-| @size-change | 每页条目数改变时触发 | `size` |
+|参数|说明|类型|默认值|可选值|
+|---|---|---|---|---|
+|modelValue|当前页码（Vue3，优先级高于value）|Number|1|\-|
+|value|当前页码（Vue2或Vue3备用）|Number|1|\-|
+|total|总记录数|Number|0|\-|
+|pageSize|每页显示的记录数|Number|10|\-|
+|pagerCount|显示的页码按钮数量|Number|5|\-|
+|disabled|是否禁用分页|Boolean|false|true|
+|forceEllipses|是否显示省略号|Boolean|false|true|
+|simple|是否为简单分页|Boolean|false|true|
+|showPrevButton|是否展示上一页按钮|Boolean|true|false|
+|showNextButton|是否展示下一页按钮|Boolean|true|false|
+|prevText|上一页按钮文字|String|'上一页'|\-|
+|nextText|下一页按钮文字|String|'下一页'|\-|
+|bgColor|背景色|String|Boolean|'#f7f7f7'|
+|color|文本色|String|'#606266'|\-|
+|activeBgColor|激活背景色|String|Boolean|'#2979ff'|
+|activeColor|激活文本色|String|Boolean|'#ffffff'|
+|fontSize|字体尺寸|String|'14px'|\-|
+|round|圆角|String|'4px'|\-|
+|borderColor|描边色|String|Boolean|'#e4e7ed'|
+|itemWidth|每项宽度|String|'34px'|\-|
+|itemHeight|每项高度|String|'34px'|\-|
+|customStyle|自定义样式|Object|{}|\-|
 
-### 插槽说明（Slot）
+### [#](http://118.25.198.98/components/pagination.html#events) Events
 
-| 插槽名 | 说明 | 参数 |
-| --- | --- | --- |
-| default | 默认插槽（暂未使用） | - |
+|事件名|说明|回调参数|
+|---|---|---|
+|change|切换分页时触发|page: 当前页码|
 
-### 支持的 layout 项
+### [#](http://118.25.198.98/components/pagination.html#slots) Slots
 
-| layout 项 | 说明 |
-| --- | --- |
-| `prev` | 上一页按钮 |
-| `pager` | 页码列表 |
-| `next` | 下一页按钮 |
-| `total` | 显示总页数信息 |
+|名称|说明|参数|
+|---|---|---|
+|prev|自定义上一页按钮内容|disabled: 是否禁用|
+|next|自定义下一页按钮内容|disabled: 是否禁用|
+|page|自定义页码按钮内容|label: 页码标签, active: 是否激活|
+
+上次更新时间: 2025/8/24 23:26:43

@@ -1,7 +1,7 @@
 /**
- * uview-plus-helper VS Code 扩展 - 组件提供者注册模块
+ * uView Next-helper VS Code 扩展 - 组件提供者注册模块
  * 
- * 此模块负责注册所有 uview-plus 组件的智能补全和悬停提示功能，
+ * 此模块负责注册所有 uView Next 组件的智能补全和悬停提示功能，
  * 为开发者提供便捷的组件开发体验。
  */
 
@@ -18,7 +18,7 @@ import {
 } from "../providers/component-factory";
 
 /**
- * 注册所有 uview-plus 组件的智能提示功能
+ * 注册所有 uView Next 组件的智能提示功能
  * 
  * @param context VS Code 扩展上下文，用于注册提供者和管理订阅生命周期
  * @returns Promise<vscode.Disposable[]> 注册的订阅列表，用于后续管理和清理
@@ -59,7 +59,7 @@ export async function registerAll(context: vscode.ExtensionContext): Promise<vsc
     for (const { tag, docSource } of COMPONENT_MAP) {
       try {
         // 提取组件名称（去掉 up- 或 u- 前缀）
-        const componentName = tag.replace(/^(up-|u-)/, "");
+        const componentName = tag.replace("u-", "");
         // 加载组件的元数据（包含属性、事件等信息）
         const componentMeta = loadComponentSchema(componentName, docSource);
         // 创建组件悬停提供者实例

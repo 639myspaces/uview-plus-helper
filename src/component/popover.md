@@ -1,37 +1,42 @@
-# Popover 弹窗提示 3.5.10
+## [#](http://118.25.198.98/components/popover.html#%E4%BB%8B%E7%BB%8D) 介绍
 
-Popover组件主要用于点击显示弹窗展示内容，Popover组件实际上与tootip组件高度类似，为减少体积，重复利用代码，因此直接使用tooltip二次封装而成。
+Popover 气泡弹出框是一个轻量级的弹出层组件，用于显示提示信息或额外内容。支持多种弹出方向和位置，具有良好的交互体验。
 
-## API
+注意
 
-### Props
+由于小程序无法监听点击自己以外的地方，为了在点击页面其他地方时，可以自动关闭 popover ，所以需要在页面的根元素上绑定点击事件，并发送 uni.$emit('u-popover-close') 事件
 
-| 参数 | 说明 | 类型 | 默认值 | 可选值 |
-| --- | --- | --- | --- | --- |
-| text | 需要显示的提示文字 | String \| Number | - | - |
-| copyText | 点击复制按钮时，复制的文本，为空则使用text值 | String \| Number | - | - |
-| size | 文本大小 | String \| Number | 14 | - |
-| color | 字体颜色 | String | #606266 | - |
-| bgColor | 弹出提示框时，文本的背景色 | String | transparent | - |
-| direction <span class="badge tip" style="vertical-align:top;">3.4.104</span> | 弹出提示的方向，top-上方，bottom-下方, left-左方, right-右方 | String | top | bottom |
-| zIndex | 弹出提示的z-index，nvue无效 | String \| Number | 10071 | - |
-| showCopy | 是否显示复制按钮 | Boolean | true | false |
-| buttons | 扩展的按钮组 | Array | - | - |
-| overlay | 是否显示透明遮罩以防止触摸穿透 | Boolean | true | false |
-| showToast | 是否显示复制成功或者失败的`toast` | Boolean | true | false |
-| triggerMode <span class="badge tip" style="vertical-align:top;">3.4.104</span> | 触发模式 | String | longpress | click |
-| popupBgColor <span class="badge tip" style="vertical-align:top;">3.4.104</span> | 弹窗背景色 | String |  |  |
-| forcePosition <span class="badge tip" style="vertical-align:top;">3.5.8</span> | 手动强制定位更精确控制,支持指定left/right/top/bottom | Object | {} |  |
 
-### Slot
+## [#](http://118.25.198.98/components/popover.html#api) API
 
-| 名称 | 说明 |
-| --- | --- |
-| trigger <span class="badge tip" style="vertical-align:top;">3.4.104</span> | 触发器插槽 |
-| content <span class="badge tip" style="vertical-align:top;">3.4.104</span> | 弹窗内容插槽 |
+### [#](http://118.25.198.98/components/popover.html#props) Props
 
-### Events
+|参数|说明|类型|默认值|可选值|
+|---|---|---|---|---|
+|show|是否显示弹出层|Boolean|false|true / false|
+|content|弹出层内容|String|''|\-|
+|position|弹出方向|String|'top'|top / bottom / left / right / auto / top-left / top-right / bottom-left / bottom-right / left-top / left-bottom / right-top / right-bottom|
+|showArrow|是否显示箭头|Boolean|true|true / false|
+|arrowSize|箭头大小|String / Number|'12px'|\-|
+|arrowColor|箭头颜色|String|'#000'|\-|
+|bgColor|弹出层背景色|String|'#060607'|\-|
+|color|文字颜色|String|'#fff'|\-|
+|fontSize|字体大小|String / Number|'14px'|\-|
+|padding|内边距|String / Number|'8px 12px'|\-|
+|round|圆角|String / Number|'4px'|\-|
+|width|弹出层宽度|String / Number|''|\-|
+|maxWidth|弹出层最大宽度|String / Number|'200px'|\-|
+|minWidth|弹出层最小宽度|String / Number|'50px'|\-|
+|zIndex|层级|String / Number|999|\-|
+|duration|动画时长（毫秒）|String / Number|300|\-|
+|disabled|是否禁用|Boolean|false|true / false|
+|popoverStyle|自定义弹出层样式|Object|{}|\-|
+|showOverlay 3.6.7|是否显示遮罩层|Boolean|false|true|
 
-| 事件名 | 说明 | 回调参数 |
-| --- | --- | --- |
-| click | 点击触发事件 | index，被点击按钮的索引 |
+### [#](http://118.25.198.98/components/popover.html#slots) Slots
+
+|名称|说明|参数|
+|---|---|---|
+|content|弹出层的内容|\-|
+
+上次更新时间: 2025/9/11 13:27:54

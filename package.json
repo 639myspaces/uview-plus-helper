@@ -1,13 +1,13 @@
 {
-  "name": "uview-plus-helper",
-  "displayName": "uview-plus 代码提示助手",
-  "publisher": "uview-plus",
-  "description": "🚀 一个为 uview-plus  组件库提供智能提示的 VS Code 插件",
+  "name": "uview-next-helper",
+  "displayName": "uView Next 代码提示助手",
+  "publisher": "uView Next",
+  "description": "🚀 一个为 uView Next  组件库提供智能提示的 VS Code 插件",
   "version": "1.1.0",
   "license": "MIT",
   "author": {
     "name": "哈哈先生",
-    "url": "https://gitee.com/my_spaces/uview-plus-helper.git"
+    "url": "https://gitee.com/my_spaces/uview-next-helper.git"
   },
   "engines": {
     "vscode": "^1.74.0"
@@ -22,12 +22,12 @@
   "icon": "public/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/639myspaces/uview-plus-helper.git"
+    "url": "https://gitee.com/my_spaces/uview-next-helper.git"
   },
   "keywords": [
     "uniapp",
     "uview",
-    "uview plus",
+    "uView Next",
     "html",
     "vue",
     "extension",
@@ -36,10 +36,10 @@
   "contributes": {
     "commands": [
       {
-        "command": "uview-plus-helper.toggleIntellisense",
-        "title": "开启或关闭 uView Plus 智能提示",
-        "category": "uView Plus",
-        "description": "开启或关闭uView Plus组件的智能提示功能，包括标签补全和悬停提示",
+        "command": "uView-Next-helper.toggleIntellisense",
+        "title": "开启或关闭 uView Next 智能提示",
+        "category": "uView Next",
+        "description": "开启或关闭uView Next组件的智能提示功能，包括标签补全和悬停提示",
         "icon": {
           "light": "public/logo.png",
           "dark": "public/logo.png"
@@ -48,7 +48,7 @@
     ],
     "keybindings": [
       {
-        "command": "uview-plus-helper.toggleIntellisense",
+        "command": "uView-Next-helper.toggleIntellisense",
         "key": "ctrl+shift+u",
         "mac": "cmd+shift+u",
         "when": "editorTextFocus"
@@ -57,34 +57,34 @@
     "menus": {
       "editor/context": [
         {
-          "command": "uview-plus-helper.toggleIntellisense",
-          "group": "uview-plus@1",
+          "command": "uView-Next-helper.toggleIntellisense",
+          "group": "uView Next@1",
           "when": "editorLangId == vue || editorLangId == html"
         }
       ],
       "commandPalette": [
         {
-          "command": "uview-plus-helper.toggleIntellisense",
+          "command": "uView-Next-helper.toggleIntellisense",
           "when": "editorLangId == vue || editorLangId == html"
         }
       ],
       "editor/title": [
         {
-          "command": "uview-plus-helper.toggleIntellisense",
+          "command": "uView-Next-helper.toggleIntellisense",
           "when": "editorLangId == vue || editorLangId == html"
         }
       ]
     },
     "configuration": {
       "type": "object",
-      "title": "uView Plus Helper",
+      "title": "uView Next Helper",
       "properties": {
-        "uview-plus-helper.enableIntellisense": {
+        "uView Next-helper.enableIntellisense": {
           "type": "boolean",
           "default": true,
-          "description": "启用或禁用uView Plus组件的智能提示功能"
+          "description": "启用或禁用uView Next组件的智能提示功能"
         },
-        "uview-plus-helper.showHoverInfo": {
+        "uView Next-helper.showHoverInfo": {
           "type": "boolean",
           "default": true,
           "description": "显示组件的悬停提示信息"

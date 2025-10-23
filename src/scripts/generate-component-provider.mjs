@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * uview-plus-helper VS Code 扩展 - 组件提供者生成脚本
+ * uView Next-helper VS Code 扩展 - 组件提供者生成脚本
  * 
  * 此脚本用于自动生成新组件的提供者代码文件，包括补全提供者和悬停提供者类，
  * 并更新组件映射表，以便在VS Code中为该组件提供智能提示功能。
@@ -24,7 +24,7 @@ const componentName = process.argv[2];
 
 // 检查是否提供了组件名称参数
 if (!componentName) {
-  console.error('请提供组件名称，例如: npm run generate up-example');
+  console.error('请提供组件名称，例如: npm run generate u-example');
   process.exit(1);  // 参数缺失，终止程序运行
 }
 
@@ -36,7 +36,7 @@ if (!componentName) {
  */
 const generateProviderCode = (componentName) => {
   // 将组件名称转换为驼峰式类名（去掉up-前缀，并将连字符后的首字母大写）
-  const className = componentName.replace(/^(up-|u-)/, '').split('-')
+  const className = componentName.replace('u-', '').split('-')
     .map(word => word.charAt(0).toUpperCase() + word.substring(1))
     .join('');
   

@@ -1,27 +1,32 @@
-# Subsection 分段器
-
 该分段器一般用于用户从几个选项中选择某一个的场景
 
-## API
 
-### Props
+### [#](http://118.25.198.98/components/subsection.html#api) API
 
-| 参数 | 说明 | 类型 | 默认值 | 可选值 |
-| ---- | ---- | ---- | ------ | ------ |
-| list | 选项的数组，形式见上方"基本使用" | Array | - | - |
-| current | 初始化时默认选中的选项索引值 | String \| Number | 0 | - |
-| activeColor | 激活时的颜色 | String | #3c9cff | - |
-| inactiveColor | 未激活时的颜色 | String | #303133 | - |
-| mode | 模式选择，见上方"模式选择"说明 | String | button | subsection |
-| fontSize | 字体大小，单位px | String \| Number | 12 | - |
-| bold | 激活选项的字体是否加粗 | Boolean | true | false |
-| bgColor | 组件背景颜色，`mode`为`button`时有效 | String | #eeeeef | - |
-| keyName | 从`list`元素对象中读取的键名 | String | name | - |
-| activeColorKeyName | 从`list`元素对象中读取激活时的颜色 如果存在字段 优先级大于 activeColor | String |  | - |
-| inactiveColorKeyName | 从`list`元素对象中读取未激活时的颜色 如果存在字段 优先级大于 inactiveColor | String |  | - |
+### [#](http://118.25.198.98/components/subsection.html#props) Props
 
-### Events
+|参数|说明|类型|默认值|可选值|
+|---|---|---|---|---|
+|list|选项的数组，形式见上方"基本使用"|Array|\-|\-|
+|shape|外观形状|String|Number|square|
+|height|组件高度|String|Number|30px|
+|current|初始化时默认选中的选项索引值|String|Number|0|
+|activeColor|激活时的颜色|String|#3c9cff|\-|
+|inactiveColor|未激活时的颜色|String|#303133|\-|
+|mode|模式选择，见上方"模式选择"说明|String|button|subsection|
+|fontSize|字体大小，单位px|String|Number|12|
+|bold|激活选项的字体是否加粗|Boolean|true|false|
+|bgColor|组件背景颜色，`mode`为`button`时有效|String|#eeeeef|\-|
+|barColor|滑块背景色|String|\-|\-|
+|disabled 3.4.8|是否禁用|Boolean|false|true|
+|disabledBgColor 3.4.8|禁用时的背景颜色|String|#e5e5e5|\-|
+|disabledColor 3.4.8|禁用时的文字颜色|String|\-|\-|
+|keyName|从`list`元素对象中读取的键名|String|name|\-|
 
-| 事件名 | 说明 | 回调参数 |
-| ------ | ---- | -------- |
-| change | 分段器选项发生改变时触发 | index：选项的index索引值，从0开始 |
+### [#](http://118.25.198.98/components/subsection.html#events) Events
+
+|事件名|说明|回调参数|
+|---|---|---|
+|change|分段器选项发生改变时触发|index：选项的index索引值，从0开始, item: 选中的项目|
+
+上次更新时间: 2025/8/12 22:21:06

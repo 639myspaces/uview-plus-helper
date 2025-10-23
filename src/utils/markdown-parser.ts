@@ -3,9 +3,9 @@ import * as path from "path";
 import { camelToKebab, kebabToCamel } from "./index";
 
 /**
- * uview-plus-helper VS Code 扩展 - Markdown 文档解析器模块
+ * uView Next-helper VS Code 扩展 - Markdown 文档解析器模块
  * 
- * 此模块负责解析 uview-plus 组件的 Markdown 文档，提取组件的属性、事件、插槽、
+ * 此模块负责解析 uView Next 组件的 Markdown 文档，提取组件的属性、事件、插槽、
  * 外部样式类和数据结构等信息，为智能提示、文档悬停等功能提供数据支持。
  */
 
@@ -280,7 +280,7 @@ export function parseComponentMarkdown(
       
       // 返回子组件信息对象
       return {
-        name: `up-${componentName}` || `u-${componentName}`,
+        name: `u-${componentName}`,
         // 处理组件属性，确保包含v-model的所有形式
         props: props.reduce(
           (acc, prop) => {
@@ -345,7 +345,7 @@ export function parseComponentMarkdown(
     
     // 返回主组件信息对象
     return {
-      name: `up-${componentName}` || `u-${componentName}`,
+      name: `u-${componentName}`,
       // 处理组件属性，确保包含v-model的所有形式
       props: props.reduce(
         (acc, prop) => {
