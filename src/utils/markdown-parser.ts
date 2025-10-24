@@ -274,6 +274,7 @@ export function parseComponentMarkdown(
       // 将组件名从 kebab-case 转换为 PascalCase 用于匹配标题
       // 提取子组件 Props 表格
       const props = extractTableSection(content, "Props", componentName);
+      const methods = extractTableSection(content, "Methods", componentName);
       // 提取子组件 Slot 表格（同时处理 Slot 和 Slots 两种可能的标题）
       const slots = extractTableSection(content, "Slot", componentName).concat(
         extractTableSection(content, "Slots", componentName)
@@ -308,6 +309,11 @@ export function parseComponentMarkdown(
         ),
         // 转换事件数据结构
         events: events.map((event) => ({
+          name: event[0],
+          description: event[1] || "",
+          version: event[3] && event[3] !== "-" ? event[3] : undefined,
+        })),
+        methods: methods.map((event) => ({
           name: event[0],
           description: event[1] || "",
           version: event[3] && event[3] !== "-" ? event[3] : undefined,
@@ -492,7 +498,7 @@ function extractTableSection(
 
   /* ===== 2. 模糊匹配：行内包含组件名+标题 ===== */
   if (componentName) {
-    // 将组件名从 kebab-case 转换为 Pascal-Case
+    // 将组件名从 kebab-case 转换为 PascalCase
     const pascal = componentName
       .split("-")
       .map((w) => w.charAt(0).toUpperCase() + "-" + w.slice(1))
