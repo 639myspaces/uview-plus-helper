@@ -10,8 +10,8 @@
 |show|是否展示弹窗|Boolean|false|true|
 |overlay|是否显示遮罩|Boolean|true|false|
 |mode|弹出方向|String|bottom|top / right / bottom / center|
-|title 3.5.0|弹窗的标题|String|\-|\-|
-|titleStyle 3.5.1|自定义样式弹窗标题样式|Object|String|\-|
+|title|弹窗的标题|String|\-|\-|
+|titleStyle|自定义样式弹窗标题样式|Object|String|\-|
 |width|弹窗的宽度|String|Number|\-|
 |height|弹窗的高度, mode = top|center|bottom时有效|String|
 |duration|遮罩打开或收起的动画过渡时间，单位ms|String|Number|300|

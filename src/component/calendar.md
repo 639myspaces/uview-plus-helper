@@ -10,8 +10,8 @@
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
 |title|标题内容|String|日期选择|\-|
-|insert 3.0.8|是否插入模式|Boolean|false|true|
-|shape 3.1.1|选中的日期的形状 circle：圆形，square: 带圆角|String|square|circle|
+|insert|是否插入模式|Boolean|false|true|
+|shape|选中的日期的形状 circle：圆形，square: 带圆角|String|square|circle|
 |showTitle|是否显示标题|Boolean|true|false|
 |showSubtitle|是否显示副标题|Boolean|true|false|
 |mode|日期类型选择|String|single|multiple-可以选择多个日期，range-选择日期范围（多个月需配合`monthNum`属性使用）|
@@ -38,8 +38,9 @@
 |allowSameDay|是否允许日期范围的起止时间为同一天，mode = range时有效|Boolean|false|true|
 |round|圆角值，默认无圆角|String|Number|0|
 |monthNum|最大展示的月份数量|String|Number|3|
-|disabledDate 3.1.0|禁止选择的日期|Array|String|
-|disabledFun 3.1.0|一个用来判断该日期是否被禁用的函数，接受一个 Date 对象作为参数。 应该返回一个 Boolean值或数组。|Function|\-|
+|disabledDate|禁止选择的日期|Array|String|
+|disabledFun|一个用来判断该日期是否被禁用的函数，接受一个 Date 对象作为参数。 应该返回一个 Boolean值或数组。|Function|\-|
+
 
 ### Methods
 
@@ -47,12 +48,14 @@
 |---|---|
 |setFormatter|为兼容微信小程序而暴露的内部方法，见上方说明|
 
+
 ### Event
 
 |事件名|说明|回调参数|
 |---|---|---|
 |confirm|仅弹窗模式下有效，日期选择完成后触发，若`show-confirm`为`true`，则点击确认按钮后触发|选择日期相关的返回参数|
-|change 3.0.8|仅插入模式下有效，选择日期时触发|选择日期相关的返回参数|
+|change|仅插入模式下有效，选择日期时触发|选择日期相关的返回参数|
 |close|日历关闭时触发|可定义页面关闭时的回调事件|
+
 
 上次更新时间: 2025/8/12 22:21:06

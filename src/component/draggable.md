@@ -18,6 +18,7 @@
 |longpress|是否长按拖拽|Boolean|false|true|
 |closeable|是否显示关闭按钮|Boolean|false|true|
 
+
 ### Events
 
 |事件名|说明|回调参数|版本|
@@ -25,11 +26,13 @@
 |change|拖拽排序完成时触发|Array: 排序后的数据数组|\-|
 |close|点击关闭按钮时触发|Number: 被关闭项目的索引|\-|
 
+
 ### Slot
 
 |名称|说明|参数|
 |---|---|---|
 |item|自定义项目内容|{ item: 数据项, index: 索引, startIndex: 初始索引, active: 是否激活, disabled: 是否禁用 }|
 |close|自定义关闭按钮|\-|
+
 
 上次更新时间: 2025/8/24 23:26:43

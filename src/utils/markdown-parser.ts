@@ -451,8 +451,11 @@ function extractTableSection(
    * @returns 提取的表格数据数组
    */
   const sliceTable = (src: string, from: number): string[][] => {
-    // 查找表格结束位置（两个连续换行符）
-    const end = src.indexOf('\n\n', from);
+    // 查找表格结束位置（两个连续换行符或标题标记##/###）
+    const endRegex = /\n\n|\n\s*#{2,3}\s*/g;
+    endRegex.lastIndex = from;
+    const match = endRegex.exec(src);
+    const end = match ? match.index : -1;
     // 截取表格部分内容
     let raw = src.substring(from, end === -1 ? src.length : end);
     

@@ -9,7 +9,7 @@
 |---|---|---|---|
 |show|是否显示级联选择器|Boolean|false|
 |title|选择器标题|String|请选择|
-|titleStyle 3.5.1|自定义样式弹窗标题样式|Object|String|
+|titleStyle|自定义样式弹窗标题样式|Object|String|
 |options|选项数据|Array|\[\]|
 |modelValue/value|当前选中值|String / Number / Array|\-|
 |placeholder|占位符文本|String|请选择|
@@ -30,6 +30,7 @@
 |safeAreaInsetBottom|是否开启底部安全区适配|Boolean|true|
 |itemHeight|选项高度|String|50px|
 
+
 ### Events
 
 |事件名|说明|回调参数|
@@ -39,9 +40,11 @@
 |confirm|确认选择时触发（选择到最后一级时）|{value: 选中值数组, label: 选中标签数组, selectedItems: 选中项数组}|
 |selected|选择某一项时触发|{item: 选中项, level: 当前层级, selectedPath: 选择路径}|
 
+
 ### Options 数据结构
 
 每个选项应包含以下字段（可通过 `field` 属性自定义）：
+
 
 ## 注意事项
 

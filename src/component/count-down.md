@@ -12,12 +12,14 @@
 |autoStart|是否自动开始倒计时|Boolean|true|false|
 |millisecond|是否展示毫秒倒计时|Boolean|false|true|
 
+
 ### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |change|过程中，倒计时变化时触发|time: 剩余的时间|
 |finish|倒计时结束|\-|
+
 
 ### Methods
 
@@ -28,5 +30,6 @@
 |start|开始倒计时|
 |pause|暂停倒计时|
 |reset|重置倒计时|
+
 
 上次更新时间: 2025/7/31 14:06:20

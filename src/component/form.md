@@ -43,7 +43,7 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 |---|---|---|---|---|
 |label|左侧提示文字|String|\-|\-|
 |prop|表单域`model`对象的属性名，在使用 validate、resetFields 方法的情况下，该属性是必填的|String|\-|\-|
-|rules 3.3.1|表单校验规则|Object|Function|Array|
+|rules|表单校验规则|Object|Function|Array|
 |borderBottom|是否显示下边框，如不需要下边框，需同时将`u-form`的同名参数设置为`false`|String|Boolean|true|
 |labelWidth|提示文字的宽度，单位rpx，如设置，将覆盖`u-form`的同名参数|String|Number|\-|
 |labelPosition|label的位置|String|\-|left / top|

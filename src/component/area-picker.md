@@ -25,8 +25,9 @@
 |closeOnClickOverlay|是否允许点击遮罩关闭选择器（注意：关闭事件需要自行处理，只会在开启closeOnClickOverlay后点击遮罩层执行close回调）|Boolean|true|false|
 |immediateChange|是否在手指松开时立即触发`change`事件。若不开启则会在滚动动画结束后触发`change`事件，只在微信`2.21.1`及以上有效|Boolean|false|true|
 |round|圆角值，默认无圆角|String|Number|0|
-|showInput 3.2.5|是否显示input输入框|Boolean|false|true|
-|inputProps 3.2.5|input属性，参考input组件|Object|\-|\-|
+|showInput|是否显示input输入框|Boolean|false|true|
+|inputProps|input属性，参考input组件|Object|\-|\-|
+
 
 ### Events
 
@@ -37,10 +38,12 @@
 |change|当选择值变化时触发|Array: 见上方"回调参数"部分说明|\-|
 |cancel|点击取消按钮|\-|\-|
 
+
 ### Slot
 
 |名称|说明|
 |---|---|
 |trigger|自定义触发|
+
 
 上次更新时间: 2025/7/28 14:10:53

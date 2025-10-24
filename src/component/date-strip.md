@@ -37,16 +37,19 @@
 |padZero|是否对小于10的数字补0|Boolean|false|true|
 |formatter|日期格式化函数|Function|\-|\-|
 
+
 ### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |change|点击日期时触发|timestamp: 选中的时间戳|
 
+
 ### Methods
 
 |方法名|说明|参数|
 |---|---|---|
 |setFormatter|设置格式化函数|formatter: Function|
+
 
 上次更新时间: 2025/8/24 23:26:43

@@ -13,8 +13,8 @@
 |showColorList|是否显示颜色列表|Boolean|true|\-|
 |showClear|是否显示清空按钮|Boolean|true|\-|
 |showUndo|是否显示撤销按钮|Boolean|true|\-|
-|showClose 3.5.7|是否显示关闭按钮|Boolean|true|\-|
-|closeText 3.5.7|关闭按钮的文本|String|关闭|\-|
+|showClose|是否显示关闭按钮|Boolean|true|\-|
+|closeText|关闭按钮的文本|String|关闭|\-|
 |clearText|清空按钮的文本|String|清空|\-|
 |undoText|撤销按钮的文本|String|撤销|\-|
 |confirmText|完成按钮的文本|String|完成|\-|

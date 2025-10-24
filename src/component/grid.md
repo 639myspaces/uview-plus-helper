@@ -10,9 +10,9 @@
 |col|宫格的列数|String|Number|3|
 |border|是否显示宫格的边框|Boolean|true|false|
 |align|宫格的对齐方式，用于控制只有一两个宫格时的对齐场景|String|left|center / right|
-|gutter 3.6.9|栅格间隔，左右各为此值的一半，单位任意|String|Number|0|
-|round 3.6.9|设置圆角值|string|\-|
-|bgColor 3.6.9|背景颜色|string|\-|
+|gutter|栅格间隔，左右各为此值的一半，单位任意|String|Number|0|
+|round|设置圆角值|string|\-|
+|bgColor|背景颜色|string|\-|
 
 ### Grid-item Props
 

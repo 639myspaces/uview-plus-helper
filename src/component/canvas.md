@@ -14,6 +14,7 @@ webgl（其他平台）|2d|
 |disableScroll|是否禁用滚动|Boolean|false|true|
 |hidpi|是否启用高清|Boolean|true|false|
 
+
 ### Events
 
 |事件名|说明|回调参数|
@@ -25,6 +26,7 @@ webgl（其他平台）|2d|
 |onLongtap|长按|event|
 |onError|错误事件|event|
 
+
 ### Methods
 
 |方法名|说明|参数|返回值|
@@ -32,6 +34,7 @@ webgl（其他平台）|2d|
 |getCanvasContext|获取画布上下文|\-|Promise<{canvas, width, height, canvasId, use2D}>|
 |queryCanvas|查询画布节点信息|\-|Promise<{node, size}>|
 |canvasToTempFilePath|导出画布为临时文件|options|Promise<string>|
+
 
 ### canvasToTempFilePath 参数
 
@@ -45,5 +48,6 @@ webgl（其他平台）|2d|
 |destHeight|输出图片高度|Number|height|
 |fileType|图片格式|String|png|
 |quality|图片质量|Number|1|
+
 
 上次更新时间: 2025/9/20 08:47:51

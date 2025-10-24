@@ -16,4 +16,5 @@
 |type|如设置，`active-color`值将会失效|String|\-|success / primary / error / info / warning|
 |bg-color|整个组件背景颜色，默认为白色|String|#ffffff|\-|
 
+
 上次更新时间: 2025/7/10 18:08:31

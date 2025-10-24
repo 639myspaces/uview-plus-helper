@@ -21,11 +21,13 @@
 |center|文字是否居中|Boolean|false|true|
 |fontSize|字体大小|String|Number|14|
 
+
 ### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |click|点击组件时触发|\-|
 |close|点击关闭按钮时触发|\-|
+
 
 上次更新时间: 2025/9/20 08:47:51

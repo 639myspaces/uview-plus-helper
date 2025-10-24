@@ -31,7 +31,7 @@ Popover 气泡弹出框是一个轻量级的弹出层组件，用于显示提示
 |duration|动画时长（毫秒）|String / Number|300|\-|
 |disabled|是否禁用|Boolean|false|true / false|
 |popoverStyle|自定义弹出层样式|Object|{}|\-|
-|showOverlay 3.6.7|是否显示遮罩层|Boolean|false|true|
+|showOverlay|是否显示遮罩层|Boolean|false|true|
 
 ### Slots
 

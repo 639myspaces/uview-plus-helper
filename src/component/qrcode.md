@@ -21,7 +21,7 @@
 |expiredText|过期提示文字|String|'二维码已过期'|\-|
 |scannedText|已扫码提示文字|String|'已扫描'|\-|
 |refreshText|刷新按钮提示文字|String|'点击刷新'|\-|
-|mode 3.6.1|生成模式，图片模式不存在层级问题|String|image|canvas|
+|mode|生成模式，图片模式不存在层级问题|String|image|canvas|
 
 ### Event
 

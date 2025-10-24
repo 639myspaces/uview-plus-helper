@@ -18,9 +18,9 @@
 |bold|激活选项的字体是否加粗|Boolean|true|false|
 |bgColor|组件背景颜色，`mode`为`button`时有效|String|#eeeeef|\-|
 |barColor|滑块背景色|String|\-|\-|
-|disabled 3.4.8|是否禁用|Boolean|false|true|
-|disabledBgColor 3.4.8|禁用时的背景颜色|String|#e5e5e5|\-|
-|disabledColor 3.4.8|禁用时的文字颜色|String|\-|\-|
+|disabled|是否禁用|Boolean|false|true|
+|disabledBgColor|禁用时的背景颜色|String|#e5e5e5|\-|
+|disabledColor|禁用时的文字颜色|String|\-|\-|
 |keyName|从`list`元素对象中读取的键名|String|name|\-|
 
 ### Events

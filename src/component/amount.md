@@ -25,10 +25,12 @@
 |color|颜色，支持使用主题色|String|''|
 |customStyle|自定义样式|Object|{}|
 
+
 ### Slots
 
 |名称|说明|参数|
 |---|---|---|
 |default|自定义内容|{ integer: string, decimal: string, capital: string }|
+
 
 上次更新时间: 2025/8/30 23:36:46

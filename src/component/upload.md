@@ -7,10 +7,10 @@
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
-|v-model 3.6.24|已上传的文件列表|Array|String|\[\]|
-|action 3.6.24|上传请求的 URL|String|''|\-|
-|data 3.6.24|上传时附带的额外参数|object|{}|\-|
-|headers 3.6.24|设置上传的请求头部|object|{}|\-|
+|v-model|已上传的文件列表|Array|String|\[\]|
+|action|上传请求的 URL|String|''|\-|
+|data|上传时附带的额外参数|object|{}|\-|
+|headers|设置上传的请求头部|object|{}|\-|
 |accept|接受的文件类型，`file`只支持`H5`（只有微信小程序才支持把 accept 配置为 all、media）|String|image|all|
 |capture|图片或视频拾取模式，当 accept 为 image 类型时，设置 capture 为 camera 可以直接调起摄像头|String|Array|\['album', 'camera'\]|
 |extension|根据文件拓展名过滤，每一项都不能是空字符串。默认不过滤。例如\['.zip','.exe','.js'\]，不支持 application/msword 等类似值|Array|\[\]|\-|

@@ -21,17 +21,17 @@
 |duration|弹窗动画过度时间|Number|400|\-|
 |buttonReverse|对调确认和取消的位置|Boolean|false|true|
 |zoom|是否开启缩放模式|Boolean|true|false|
-|zIndex 3.5.6|弹出层的`z-index`值|String / Number|10075|\-|
+|zIndex|弹出层的`z-index`值|String / Number|10075|\-|
 |asyncClose|是否异步关闭，只对确定按钮有效，见上方说明|Boolean|false|true|
 |closeOnClickOverlay|是否允许点击遮罩关闭Modal（注意：关闭事件需要自行处理，只会在开启closeOnClickOverlay后点击遮罩层执行close回调）|Boolean|false|true|
 |negativeTop|往上偏移的值，给一个负的margin-top，往上偏移，避免和键盘重合的情况，单位任意，数值则默认为rpx单位|String|Number|0|
 |width|modal宽度，不支持百分比，可以数值，px，rpx单位|String|Number|650rpx|
 |confirmButtonShape|确认按钮的样式,如设置，将不会显示取消按钮|String|\-|circle(圆形)|
-|round 3.0.1|设置圆角值|string|Number|6px|
-|buttonModel 3.1.5|按钮模式，text 文字模式，button 按钮模式|string|text|button|
-|buttonRound 3.1.5|按钮圆角，仅按钮模式有效|String|Number|
-|confirmBgColor 3.1.5|确认按钮背景颜色，仅按钮模式有效|String|\-|\-|
-|cancelBgColor 3.1.5|取消按钮背景颜色，仅按钮模式有效|String|\-|\-|
+|round|设置圆角值|string|Number|6px|
+|buttonModel|按钮模式，text 文字模式，button 按钮模式|string|text|button|
+|buttonRound|按钮圆角，仅按钮模式有效|String|Number|
+|confirmBgColor|确认按钮背景颜色，仅按钮模式有效|String|\-|\-|
+|cancelBgColor|取消按钮背景颜色，仅按钮模式有效|String|\-|\-|
 
 ### Event
 

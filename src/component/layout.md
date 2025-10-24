@@ -15,7 +15,7 @@
 |justify|水平排列方式(微信小程序暂不支持)|String|`start`(或`flex-start`)|`end`(或`flex-end`) / `center` / `around`(或`space-around`) / `between`(或`space-between`)|
 |align|垂直排列方式|String|center|top / bottom|
 |align|垂直排列方式|String|center|top / bottom|
-|wrap 3.6.4|排列时是否换行|Boolean|false|true|
+|wrap|排列时是否换行|Boolean|false|true|
 
 ### Col Props
 

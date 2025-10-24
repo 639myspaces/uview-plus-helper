@@ -7,7 +7,7 @@
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
-|v-model / modeValue 3.0.1|当前选中项对应的值|Array|\-|\-|
+|v-model|当前选中项对应的值|Array|\-|\-|
 |show|用于控制选择器的弹出与收起|Boolean|false|true|
 |showToolbar|是否显示顶部的操作栏|Boolean|true|false|
 |title|顶部中间的标题|String|\-|\-|
@@ -24,7 +24,7 @@
 |closeOnClickOverlay|是否允许点击遮罩关闭选择器（注意：关闭事件需要自行处理，只会在开启closeOnClickOverlay后点击遮罩层执行close回调）|Boolean|true|false|
 |defaultIndex|各列的默认索引|Array|\-|\-|
 |immediateChange 2.0.22|是否在手指松开时立即触发`change`事件。若不开启则会在滚动动画结束后触发`change`事件，只在微信`2.21.1`及以上有效|Boolean|false|true|
-|round 3.0.1|圆角值，默认无圆角|String|Number|0|
+|round|圆角值，默认无圆角|String|Number|0|
 
 ### Methods
 
@@ -42,7 +42,7 @@
 |change|当选择值变化时触发|Array: 见上方"回调参数"部分说明|\-|
 |cancel|点击取消按钮|\-|\-|
 
-### Slot 3.0.1
+### Slot
 
 |名称|说明|
 |---|---|

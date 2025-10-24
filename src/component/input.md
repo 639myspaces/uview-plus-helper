@@ -21,7 +21,7 @@
 |disabledColor|禁用状态时的背景色|String|#f5f7fa|\-|
 |clearable|是否显示清除控件|Boolean|false|true|
 |password|是否密码类型|Boolean|false|true|
-|showPasswordToggle 3.5.14|是否显示密码切换的眼睛图标|Boolean|true|false|
+|showPasswordToggle|是否显示密码切换的眼睛图标|Boolean|true|false|
 |maxlength|最大输入长度，设置为 -1 的时候不限制最大长度|String|Number|\-1|
 |placeholder|输入框为空时的占位符|String|\-|\-|
 |placeholderClass|指定placeholder的样式类，注意页面或组件的style中写了scoped时，需要在类名前写/deep/|String|input-placeholder|\-|

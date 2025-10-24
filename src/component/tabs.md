@@ -21,9 +21,9 @@
 |scrollable|菜单是否可滚动|Boolean|true|false|
 |current|当前选中标签的索引|String|Number|0|
 |keyName|从`list`元素对象中读取的键名|String|name|\-|
-|animated 3.5.38|是否显示切换转场动画，注意仅子组件方式有效|
-|swipeable 3.5.38|是否启用左右滑动切换，注意仅子组件方式有效|
-|height 3.5.38|内容高度|
+|animated|是否显示切换转场动画，注意仅子组件方式有效|
+|swipeable|是否启用左右滑动切换，注意仅子组件方式有效|
+|height|内容高度|
 
 ### u-tabs Events
 

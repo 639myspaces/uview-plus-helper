@@ -26,11 +26,12 @@
 |thumb|缩略图路径，如设置将显示在标题的左边，不建议使用相对路径|String|\-|\-|
 |thumb-width|缩略图的宽度，高等于宽，单位rpx|String|Number|60|
 |thumb-circle 即将删除|缩略图是否为圆形|Boolean|false|true|
-|thumb-radius 3.2.7|缩略图圆角值|String|Number|3px|
+|thumb-radius|缩略图圆角值|String|Number|3px|
 |padding|给head，body，foot部的内边距，见上方说明，单位rpx|String|Number|30|
 |show-head|是否显示头部|Boolean|true|false|
 |show-foot|是否显示尾部|Boolean|true|false|
 |box-shadow|卡片外围阴影，字符串形式|String|none|\-|
+
 
 ### Slot
 
@@ -40,6 +41,7 @@
 |body|自定义卡片主体部分内容|
 |foot|自定义卡片底部部分内容|
 
+
 ### Event
 
 |事件名|说明|回调参数|
@@ -48,5 +50,6 @@
 |head-click|卡片头部被点击时触发|index: 用户传递的标识符|
 |body-click|卡片主体部分被点击时触发|index: 用户传递的标识符|
 |foot-click|卡片底部部分被点击时触发|index: 用户传递的标识符|
+
 
 上次更新时间: 2025/7/21 08:15:17

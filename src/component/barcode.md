@@ -29,7 +29,8 @@
 |textMargin|文本边距|Number|5|\-|
 |fontSize|字体大小|Number|14|\-|
 |customStyle|自定义样式|Object|String|\-|
-|mode 3.6.1|生成模式，图片模式不存在层级问题|String|image|canvas|
+|mode|生成模式，图片模式不存在层级问题|String|image|canvas|
+
 
 ### 支持的条形码类型
 
@@ -54,5 +55,6 @@
 |MSI1110|MSI条形码，11位数字+校验位|库存管理|11位数字|
 |Pharmacode|药品编码，仅数字|药品标识|数字|
 |Codabar|库德巴码，支持数字、字母和特殊字符|图书馆、医疗|数字、字母、特殊字符|
+
 
 上次更新时间: 2025/9/1 13:21:54

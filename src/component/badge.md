@@ -21,4 +21,5 @@
 |inverted|是否反转背景和字体颜色|Boolean|false|true|
 |absolute|组件是否绝对定位，为`true`时，`offset`参数才有效|Boolean|false|true|
 
+
 上次更新时间: 2025/8/30 23:36:46

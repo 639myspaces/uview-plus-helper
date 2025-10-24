@@ -14,8 +14,8 @@
 |height|Table的高度，单位px|String|Number|null|
 |rowHeight|行高，单位px|String|Number|50|
 |showHeader|是否显示表头|Boolean|true|false|
-|headerCellStyle 3.3.9|表头单元格的样式|Object|{}|\-|
-|cellStyle 3.3.9|单元格的样式|Object|{}|\-|
+|headerCellStyle|表头单元格的样式|Object|{}|\-|
+|cellStyle|单元格的样式|Object|{}|\-|
 |ellipsis|单元格是否超出隐藏|Boolean|true|false|
 |emptyText|空数据时显示的文本|String|暂无数据|\-|
 |emptyHeight|空数据区域高度，单位px|String|Number|200|
@@ -70,8 +70,8 @@
 |formatter|格式化函数|Function|null|\-|
 |show|是否显示|Boolean|true|false|
 |className|列的类名|String|\-|\-|
-|headerEllipsis 3.3.9|表头是否超出隐藏|Boolean|true|false|
-|headerAlign 3.3.9|表头对齐方式|String|left|left|
+|headerEllipsis|表头是否超出隐藏|Boolean|true|false|
+|headerAlign|表头对齐方式|String|left|left|
 |customStyle|定义需要用到的外部样式|Object|{}|\-|
 
 ### Table Column Events

@@ -10,7 +10,7 @@
 |type|输入框类型，见上方说明|String|number|text|
 |confirmType|设置右下角按钮的文字，兼容性详见uni-app文档|String|done|send|
 |confirmHold|点击键盘右下角按钮时是否保持键盘不收起，H5无效|
-|adjustPosition 2.0.32|键盘弹起时，是否自动上推页面|Boolean|true|false|
+|adjustPosition|键盘弹起时，是否自动上推页面|Boolean|true|false|
 |maxlength|输入字符个数|String \\ Number|6|\-|
 |dot|是否用圆点填充|Boolean|false|true|
 |mode|模式选择，见上方"基本使用"说明|String|box|bottomLine / middleLine|
@@ -28,11 +28,13 @@
 |bgColor|背景颜色|String|\-|\-|
 |round|设置圆角值|String \\ Number|4px|
 
+
 ### Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
 |change|输入内容发生改变时触发，具体见上方说明|value：当前输入的值|\-|
 |finish|输入字符个数达`maxlength`值时触发，见上方说明|value：当前输入的值|\-|
+
 
 上次更新时间: 2025/7/31 14:06:20

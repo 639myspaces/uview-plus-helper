@@ -24,6 +24,7 @@
 |activeLabelColor|选中状态下label的颜色|String|\-|\-|
 |plain|镂空样式|Boolean|true|false|
 
+
 ### CheckboxGroup Props
 
 |参数|说明|类型|默认值|可选值|
@@ -47,6 +48,7 @@
 |activeLabelColor|选中状态下label的颜色|String|\-|\-|
 |plain|镂空样式|Boolean|true|false|
 
+
 ### Checkbox Slot
 
 |名称|说明|
@@ -54,10 +56,12 @@
 |\-(default)|自定义label样式|
 |icon|自定义icon图标|
 
+
 ### CheckboxGroup Event
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
 |change|任一个`checkbox`状态发生变化时触发，回调为一个对象|detail = array( \[元素为被选中的`checkbox`的`name`\] )|\-|
+
 
 上次更新时间: 2025/8/30 23:36:46

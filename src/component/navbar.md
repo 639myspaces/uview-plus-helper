@@ -25,8 +25,8 @@
 |height|导航栏高度(不包括状态栏高度在内，内部自动加上)，单位px|String|Number|44px|
 |leftIconSize|左侧返回图标的大小|String|Number|20px|
 |leftIconColor|左侧返回图标的颜色|String|#303133|\-|
-|autoBack 2.0.19|点击左侧区域(返回图标)，是否自动返回上一页|Boolean|false|true|
-|titleStyle 2.0.23|标题的样式，对象或字符串形式|String|Object|\-|
+|autoBack|点击左侧区域(返回图标)，是否自动返回上一页|Boolean|false|true|
+|titleStyle|标题的样式，对象或字符串形式|String|Object|\-|
 
 ### Event
 
@@ -45,6 +45,6 @@ App端不存在$slots,插槽`slot`使用前,需要满足`rightIcon`或者`rightT
 |---|---|
 |left|自定义左侧部分内容|
 |right|自定义右侧部分内容|
-|center 2.0.17|自定义中部内容|
+|center|自定义中部内容|
 
 上次更新时间: 2025/9/21 12:08:21

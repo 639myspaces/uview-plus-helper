@@ -30,11 +30,11 @@
 |disablePlus|是否禁用增加按钮|Boolean|false|true|
 |disableMinus|是否禁用减少按钮|Boolean|false|true|
 |iconStyle|加减按钮图标的样式|String|\-|\-|
-|iconSize 3.0.1|加减按钮图标大小|String|Number|15|
-|buttonRound 3.0.1|加减按钮圆角|String|Number|\-|
-|inputBgColor 3.0.1|输入框背景颜色|String|\-|\-|
-|disableColor 3.3.1|按钮禁用后按钮和输入框字体颜色|String|#f7f8fa|\-|
-|disableBgColor 3.3.1|禁用后的按钮和输入框背景颜色|String|#c8c9cc|\-|
+|iconSize|加减按钮图标大小|String|Number|15|
+|buttonRound|加减按钮圆角|String|Number|\-|
+|inputBgColor|输入框背景颜色|String|\-|\-|
+|disableColor|按钮禁用后按钮和输入框字体颜色|String|#f7f8fa|\-|
+|disableBgColor|禁用后的按钮和输入框背景颜色|String|#c8c9cc|\-|
 
 ### Events
 

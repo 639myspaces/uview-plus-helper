@@ -15,8 +15,9 @@
 |height|输出图片高度，单位px|String / Number|200|\-|
 |fileType|输出图片格式|String|jpg|jpg / png|
 |showGrid|是否显示网格线|Boolean|true|true / false|
-|openType 3.6.43|微信小程序开放能力，设置为chooseAvatar后，可选择微信头像|String|''|chooseAvatar|
-|watermark 3.5.41|水印配置对象|Object|{}|\-|
+|openType|微信小程序开放能力，设置为chooseAvatar后，可选择微信头像|String|''|chooseAvatar|
+|watermark|水印配置对象|Object|{}|\-|
+
 
 ### Events
 
@@ -26,6 +27,7 @@
 |open|打开裁剪弹窗时触发|\-|
 |close|关闭裁剪弹窗时触发|\-|
 |confirm|确认裁剪时触发|result: 裁剪后的图片临时路径|
-|error 3.5.41|出错时触发|message: 错误信息|
+|error|出错时触发|message: 错误信息|
+
 
 上次更新时间: 2025/9/3 10:11:29

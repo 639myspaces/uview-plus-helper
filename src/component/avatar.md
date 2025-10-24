@@ -22,11 +22,13 @@
 |color-index|如果配置了 randomBgColor 为 true，且配置了此值，则从默认的背景色数组中取出对应索引的颜色值，取值 0-19 之间|String|Number|\-|
 |name|组件标识符|String|level|\-|
 
+
 ### Avatar Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |click|头像被点击|index: 用户传递的标识符|
+
 
 ### AvatarGroup Props
 
@@ -42,10 +44,12 @@
 |gap|头像之间的遮挡比例（0.4 代表遮挡 40%）|String|Number|0.5|
 |extraValue|需额外显示的值，如设置则优先于内部的 `urls.length - maxCount` 值|String|Number|\-|
 
+
 ### AvatarGroup Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |showMore|头像组更多点击|\-|
+
 
 上次更新时间: 2025/7/31 14:06:20

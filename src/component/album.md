@@ -19,10 +19,12 @@
 |rowCount|每行展示图片数量，如设置，singleSize 和 multipleSize 将会无效|String|Number|3|
 |showMore|超出 maxCount 时是否显示查看更多的提示|Boolean|true|false|
 
+
 ### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |albumWidth|某些特殊的情况下，需要让文字与相册的宽度相等，这里事件的形式对外发送|width|
+
 
 上次更新时间: 2025/9/11 13:27:54
