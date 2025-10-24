@@ -462,11 +462,11 @@ function extractTableSection(
     // 分割行并过滤空行
     const lines = raw.split('\n').filter(l => l.trim());
     // 表格至少需要3行（表头、分隔线、数据行）
-    if (lines.length < 3) return [];
+    if (lines.length < 3) {return [];}
     
     // 修复：只过滤掉完全不包含'|'的行，但保留只包含'|'和格式符号的分隔行
     const validLines = lines.filter(l => l.includes('|'));
-    if (validLines.length < 3) return [];
+    if (validLines.length < 3) {return [];}
     
     // 提取数据行（跳过表头和分隔线），并解析每个单元格内容
     return validLines.slice(2).map(line =>
@@ -492,7 +492,7 @@ function extractTableSection(
     if (m) {
       // 查找表格开始的位置（第一个|符号）
       const pipe = content.indexOf("|", m.index + m[0].length);
-      if (pipe !== -1) return sliceTable(content, pipe);
+      if (pipe !== -1) {return sliceTable(content, pipe);}
     }
   }
 

@@ -3,7 +3,7 @@
   "displayName": "uView Next 代码提示助手",
   "publisher": "uView Next",
   "description": "🚀 一个为 uView Next  组件库提供智能提示的 VS Code 插件",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "哈哈先生",
@@ -95,6 +95,7 @@
   "scripts": {
     "clean:cache": "npm cache clean --force",
     "dev": "npm run package",
+    "login": "vsce login 你的发布者名称",
     "build": "vsce package",
     "patch": "vsce publish patch",
     "minor": "vsce publish minor",

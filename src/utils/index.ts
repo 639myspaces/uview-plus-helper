@@ -69,7 +69,7 @@ export function isOnTagName(
       break;
     }
   }
-  if (tagStart === -1) return false; // 未找到标签开始符号
+  if (tagStart === -1) {return false;} // 未找到标签开始符号
 
   // 2. 同时匹配驼峰和短横线式标签名
   const kebabTagName = camelToKebab(tagName); // 转换为短横线式
@@ -80,7 +80,7 @@ export function isOnTagName(
   const tagPrefix = lineText.substring(tagStart);
   const match = tagPrefix.match(tagRegex);
 
-  if (!match) return false; // 未匹配到指定的标签名
+  if (!match) {return false;} // 未匹配到指定的标签名
 
   // 3. 计算标签名的实际位置范围
   const actualTagName = match[1]; // 实际匹配到的标签名（驼峰或短横线式）
@@ -120,9 +120,9 @@ export function getAttributeInfoAtPosition(
         break;
       }
     }
-    if (openAngle !== -1) break;
+    if (openAngle !== -1) {break;}
   }
-  if (openAngle === -1) return null; // 未找到标签开始符号
+  if (openAngle === -1) {return null;} // 未找到标签开始符号
 
   let closeAngle = -1;
   // 向后查找最近的 '>' 符号
@@ -139,9 +139,9 @@ export function getAttributeInfoAtPosition(
         break;
       }
     }
-    if (closeAngle !== -1) break;
+    if (closeAngle !== -1) {break;}
   }
-  if (closeAngle === -1) return null; // 未找到标签闭合符号
+  if (closeAngle === -1) {return null;} // 未找到标签闭合符号
 
   /* ---------- 2. 取出完整标签文本 ---------- */
   const tagRange = new vscode.Range(
@@ -152,7 +152,7 @@ export function getAttributeInfoAtPosition(
 
   /* ---------- 3. 解析标签名和属性信息 ---------- */
   const tagNameMatch = tagContent.match(/^<([a-zA-Z0-9-]+)/);
-  if (!tagNameMatch) return null;
+  if (!tagNameMatch) {return null;}
   const tagName = tagNameMatch[1]; // 提取标签名
 
   // 计算光标在标签内容中的偏移量
@@ -402,7 +402,7 @@ export abstract class ComponentDiagnosticProvider {
   }
 
   public updateDiagnostics(document: vscode.TextDocument) {
-    if (document.languageId !== "html" && document.languageId !== "vue") return;
+    if (document.languageId !== "html" && document.languageId !== "vue") {return;}
 
     this.initialize();
 
@@ -489,7 +489,7 @@ export abstract class ComponentDiagnosticProvider {
 
     attrs.forEach((attr) => {
       const match = attr.match(/(?:v-bind:|v-on:|@|:)?([a-zA-Z0-9-_.]+)/);
-      if (!match) return;
+      if (!match) {return;}
 
       const rawName = match[1];
       // 标准化属性名（统一转为驼峰式）
