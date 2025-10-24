@@ -1,9 +1,9 @@
 此选择器用于地区选择场景。
 
 
-### [#](http://118.25.198.98/components/areaPicker.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/areaPicker.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -28,7 +28,7 @@
 |showInput 3.2.5|是否显示input输入框|Boolean|false|true|
 |inputProps 3.2.5|input属性，参考input组件|Object|\-|\-|
 
-### [#](http://118.25.198.98/components/areaPicker.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
@@ -37,7 +37,7 @@
 |change|当选择值变化时触发|Array: 见上方"回调参数"部分说明|\-|
 |cancel|点击取消按钮|\-|\-|
 
-### [#](http://118.25.198.98/components/areaPicker.html#slot) Slot
+### [#]() Slot
 
 |名称|说明|
 |---|---|

@@ -1,8 +1,8 @@
 
 
-### [#](http://118.25.198.98/components/loadingPage.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/loadingPage.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

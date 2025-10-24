@@ -1,9 +1,9 @@
 展示操作或任务的当前进度，比如上传文件，是一个圆形的进度环。
 
 
-### [#](http://118.25.198.98/components/circleProgress.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/circleProgress.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

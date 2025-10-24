@@ -1,19 +1,19 @@
 本组件提供一个类似相册的功能，让开发者开发起来更加得心应手。减少重复的模板代码。
 
-## [#](http://118.25.198.98/components/album.html#%E5%B9%B3%E5%8F%B0%E5%B7%AE%E5%BC%82%E8%AF%B4%E6%98%8E) 平台差异说明
+## [#]() 平台差异说明
 
 |App（vue）|App（nvue）|H5|小程序|
 |---|---|---|---|
 |√|√|√|√|
 
-## [#](http://118.25.198.98/components/album.html#%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8) 基本使用
+## [#]() 基本使用
 
 通过 `urls` 设置相册的图片地址，搭配 image 等做出更棒的效果！
 
 
-## [#](http://118.25.198.98/components/album.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/album.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -29,7 +29,7 @@
 |rowCount|每行展示图片数量，如设置，singleSize 和 multipleSize 将会无效|String|Number|3|
 |showMore|超出 maxCount 时是否显示查看更多的提示|Boolean|true|false|
 
-### [#](http://118.25.198.98/components/album.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

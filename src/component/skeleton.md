@@ -5,9 +5,9 @@
 由于`VUE`和`NVUE`的特性不同，组件动画在`VUE`上为由左到右形式，在`NVUE`上为明暗显隐的形式。
 
 
-### [#](http://118.25.198.98/components/skeleton.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/skeleton.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

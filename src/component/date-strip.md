@@ -1,6 +1,6 @@
 日期横条组件，用于展示周日历或一组日历信息，支持多种展示模式和自定义样式。
 
-## [#](http://118.25.198.98/components/dateStrip.html#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF) 使用场景
+## [#]() 使用场景
 
 -   在应用中展示日期选择器，如日历、日程安排等
 -   需要横向展示一周或多天日期信息
@@ -8,9 +8,9 @@
 -   可显示农历信息
 
 
-## [#](http://118.25.198.98/components/dateStrip.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/dateStrip.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -37,13 +37,13 @@
 |padZero|是否对小于10的数字补0|Boolean|false|true|
 |formatter|日期格式化函数|Function|\-|\-|
 
-### [#](http://118.25.198.98/components/dateStrip.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |change|点击日期时触发|timestamp: 选中的时间戳|
 
-### [#](http://118.25.198.98/components/dateStrip.html#methods) Methods
+### [#]() Methods
 
 |方法名|说明|参数|
 |---|---|---|

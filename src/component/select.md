@@ -1,9 +1,9 @@
 该组件是一个基于本地数据的下拉列表，提供丰富的配置选项和事件回调，适用于各种选择场景。
 
 
-### [#](http://118.25.198.98/components/select.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/select.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -22,7 +22,7 @@
 |border|边框样式|String|'default'|'default'、'underline'、'none'|
 |customStyle|自定义样式|Object/String|{}|\-|
 
-### [#](http://118.25.198.98/components/select.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -31,7 +31,7 @@
 |close|下拉列表关闭时触发|\-|
 |clear|点击清除按钮之后触发|oldValue: 清空前的值|
 
-### [#](http://118.25.198.98/components/select.html#slot) Slot
+### [#]() Slot
 
 |名称|说明|
 |---|---|

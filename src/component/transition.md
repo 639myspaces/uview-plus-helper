@@ -1,9 +1,9 @@
 该组件用于组件的动画过渡效果。
 
 
-### [#](http://118.25.198.98/components/transition.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/transition.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -13,7 +13,7 @@
 |timingFunction|使用的动画过渡函数，见上方说明|String|ease-out|\-|
 |customStyle|自定义样式|Object|\-|\-|
 
-### [#](http://118.25.198.98/components/transition.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

@@ -5,9 +5,9 @@
 由于在`nvue`下，`u-textarea`名称被uni-app官方占用，在`nvue`页面中请使用`u-textarea`名称，在`vue`页面中使用`u-textarea`或者`u-textarea`均可。
 
 
-### [#](http://118.25.198.98/components/textarea.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/textarea.html#list-props) List Props
+### [#]() List Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -40,13 +40,13 @@
 |borderColor3.0.1|边框颜色|string|#e5e5e5|\-|
 |backgroundColor3.0.1|背景颜色|string|#ffffff|\-|
 
-### [#](http://118.25.198.98/components/textarea.html#methods) Methods
+### [#]() Methods
 
 |方法名|说明|
 |---|---|
 |setFormatter|为兼容微信小程序而暴露的内部方法，见上方说明|
 
-### [#](http://118.25.198.98/components/textarea.html#list-events) List Events
+### [#]() List Events
 
 |事件名|说明|回调参数|
 |---|---|---|

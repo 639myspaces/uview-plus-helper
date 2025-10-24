@@ -1,9 +1,9 @@
 该组件一般用于内容较长，预先收起一部分，点击展开全部内容的场景。
 
 
-### [#](http://118.25.198.98/components/readMore.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/readMore.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -17,7 +17,7 @@
 |textIndent|段落首行缩进的字符个数|String|2em|\-|
 |name|用于在`open`和`close`事件中当作回调参数返回|String|Number|\-|
 
-### [#](http://118.25.198.98/components/readMore.html#methods) Methods
+### [#]() Methods
 
 此方法如要通过ref手动调用
 
@@ -25,7 +25,7 @@
 |---|---|
 |init|重新初始化组件内部高度计算过程，如果内嵌[u-parse](http://118.25.198.98/components/parse.html)组件时可能需要用到|
 
-### [#](http://118.25.198.98/components/readMore.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

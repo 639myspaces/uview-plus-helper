@@ -1,9 +1,9 @@
 该组件一般用于满意度调查，星型评分的场景。
 
 
-## [#](http://118.25.198.98/components/rate.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/rate.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -21,7 +21,7 @@
 |inactiveIcon|未选中时的图标名，只能为 uView 的内置图标|String|star|\-|
 |touchable|是否可以通过滑动手势选择评分|Boolean|true|false|
 
-### [#](http://118.25.198.98/components/rate.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

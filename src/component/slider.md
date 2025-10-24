@@ -1,11 +1,11 @@
-## [#](http://118.25.198.98/components/slider.html#slider-%E6%BB%91%E5%8A%A8%E9%80%89%E6%8B%A9%E5%99%A8-3-6-4) Slider 滑动选择器 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/slider.html#api)
+## [#]() Slider 滑动选择器 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/slider.html#api)
 
 适用于选择单个数值或区间范围的场景，支持横向/纵向、反向、禁用、双滑块区间、防交叉、显示数值等能力。
 
 
-## [#](http://118.25.198.98/components/slider.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/slider.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|
 |---|---|---|---|
@@ -32,7 +32,7 @@
 
 说明：数值类 props 会在内部做安全转换与边界裁剪。
 
-### [#](http://118.25.198.98/components/slider.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -40,7 +40,7 @@
 |dragStart|开始拖动|当前值（Number|
 |dragEnd|结束拖动|当前值（Number|
 
-### [#](http://118.25.198.98/components/slider.html#slots) Slots
+### [#]() Slots
 
 |名称|说明|
 |---|---|

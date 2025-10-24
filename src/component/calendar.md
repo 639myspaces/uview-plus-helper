@@ -3,9 +3,9 @@
 **注意：** 此组件与[Picker 选择器](http://118.25.198.98/components/picker.html)的日期选择模式有一定的重合之处，区别在于本组件为更专业的日期选择场景，能选择日期范围等。 另外`Picker`组件的日期模式可以配置更多的参数，如时、分、秒等，可以根据不同的使用场景进行选择。
 
 
-### [#](http://118.25.198.98/components/calendar.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/calendar.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -41,13 +41,13 @@
 |disabledDate 3.1.0|禁止选择的日期|Array|String|
 |disabledFun 3.1.0|一个用来判断该日期是否被禁用的函数，接受一个 Date 对象作为参数。 应该返回一个 Boolean值或数组。|Function|\-|
 
-### [#](http://118.25.198.98/components/calendar.html#methods) Methods
+### [#]() Methods
 
 |方法名|说明|
 |---|---|
 |setFormatter|为兼容微信小程序而暴露的内部方法，见上方说明|
 
-### [#](http://118.25.198.98/components/calendar.html#event) Event
+### [#]() Event
 
 |事件名|说明|回调参数|
 |---|---|---|

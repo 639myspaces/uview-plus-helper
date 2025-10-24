@@ -1,9 +1,9 @@
 该组件一般用于垂直展示的导航栏，用于在不同的内容区域之间进行切换，支持徽标提示、禁用状态、自定义样式等功能。
 
 
-### [#](http://118.25.198.98/components/sidebar.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/sidebar.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -27,13 +27,13 @@
 |lineBgSize|滑块背景显示大小，当滑块背景设置为图片时使用|String|\-|\-|
 |showLine|是否显示滑块|Boolean|\-|\-|
 
-### [#](http://118.25.198.98/components/sidebar.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |change|切换导航项时触发|{index, label, value}|
 
-### [#](http://118.25.198.98/components/sidebar.html#slots) Slots
+### [#]() Slots
 
 |名称|说明|
 |---|---|

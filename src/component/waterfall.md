@@ -12,9 +12,9 @@
 2.  由于hx的问题，支付宝小程序需要hx2.8.2版本及以上才支持本组件
 
 
-### [#](http://118.25.198.98/components/waterfall.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/waterfall.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -23,7 +23,7 @@
 |add-time|单条数据添加到队列的时间间隔，单位ms，见上方注意事项说明|String|Number|200|
 |idKey|数据的唯一值的键名，见上方说明|String|id|\-|
 
-### [#](http://118.25.198.98/components/waterfall.html#methods) Methods
+### [#]() Methods
 
 这些为组件内部的方法，需要通过`ref`调用
 

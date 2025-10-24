@@ -9,9 +9,9 @@
 由于在`nvue`下，`u-input`名称被uni-app官方占用，在`nvue`页面中请使用`u-input`名称，在`vue`页面中使用`u-input`或者`u-input`均可。
 
 
-### [#](http://118.25.198.98/components/input.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/input.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -57,7 +57,7 @@
 |borderColor|边框颜色|string|#e5e5e5|\-|
 |backgroundColor|背景颜色|string|#ffffff|\-|
 
-### [#](http://118.25.198.98/components/input.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
@@ -69,13 +69,13 @@
 |change|内容发生变化触发此事件|value：内容值|\-|
 |clear|点击清空内容|\-|\-|
 
-### [#](http://118.25.198.98/components/input.html#methods) Methods
+### [#]() Methods
 
 |方法名|说明|
 |---|---|
 |setFormatter|为兼容微信小程序而暴露的内部方法，见上方说明|
 
-### [#](http://118.25.198.98/components/input.html#slots) Slots
+### [#]() Slots
 
 |名称|说明|
 |---|---|

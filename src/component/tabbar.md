@@ -1,4 +1,4 @@
-#### [#](http://118.25.198.98/components/tabbar.html#%E4%BC%98%E7%82%B9) 优点：
+#### [#]() 优点：
 
 此组件提供了自定义 tabbar 的能力，具有如下特点：
 
@@ -9,9 +9,9 @@
 -   有效防止组件区域高度塌陷，无需给父元素额外的内边距或者外边距来避开导航的区域
 
 
-### [#](http://118.25.198.98/components/tabbar.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/tabbar.html#tabbar-props) TabBar Props
+### [#]() TabBar Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -31,7 +31,7 @@
 |bottom 3.5.33|胶囊标签栏底部边距|String|Number|\-|
 |mode 3.5.33|标签模式|String|normal|normal, tag|
 
-### [#](http://118.25.198.98/components/tabbar.html#tabbaritem-props) TabBarItem Props
+### [#]() TabBarItem Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -48,14 +48,14 @@
 |url 3.6.14|点击后跳转的URL地址|String|\-|\-|
 |linkType 3.6.14|链接跳转的方式|String|redirectTo|navigateTo,switchTab,reLaunch|
 
-### [#](http://118.25.198.98/components/tabbar.html#tabbaritem-events) TabBarItem Events
+### [#]() TabBarItem Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |change|切换选项时触发|index：当前要切换项的 name|
 |click|切换选项时触发|index：当前要切换项的 name|
 
-### [#](http://118.25.198.98/components/tabbar.html#methods) Methods
+### [#]() Methods
 
 |方法名|说明|
 |---|---|

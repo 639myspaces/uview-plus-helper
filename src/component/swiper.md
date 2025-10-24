@@ -6,9 +6,9 @@
 -   具有设置加载状态和嵌入视频的能力，功能齐全丰富
 
 
-### [#](http://118.25.198.98/components/swiper.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/swiper.html#swiper-props) Swiper Props
+### [#]() Swiper Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -37,14 +37,14 @@
 |loading|是否加载中|Boolean|false|true|
 |showTitle|是否显示标题，要求数组对象中有 title 属性|Boolean|false|\-|
 
-### [#](http://118.25.198.98/components/swiper.html#swiper-events) Swiper Events
+### [#]() Swiper Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |click|点击轮播图时触发|index：点击了第几张图片，从 0 开始|
 |change|轮播图切换时触发(自动或者手动切换)|index：切换到了第几张图片，从 0 开始|
 
-### [#](http://118.25.198.98/components/swiper.html#swiperindicator-props) SwiperIndicator Props
+### [#]() SwiperIndicator Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

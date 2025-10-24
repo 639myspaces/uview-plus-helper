@@ -1,9 +1,9 @@
 该分段器一般用于用户从几个选项中选择某一个的场景
 
 
-### [#](http://118.25.198.98/components/subsection.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/subsection.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -23,7 +23,7 @@
 |disabledColor 3.4.8|禁用时的文字颜色|String|\-|\-|
 |keyName|从`list`元素对象中读取的键名|String|name|\-|
 
-### [#](http://118.25.198.98/components/subsection.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

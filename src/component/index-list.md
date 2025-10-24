@@ -1,9 +1,9 @@
 通过折叠面板收纳内容区域
 
 
-### [#](http://118.25.198.98/components/indexList.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/indexList.html#indexbar-props) IndexBar Props
+### [#]() IndexBar Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -13,7 +13,7 @@
 |sticky|是否开启锚点自动吸顶|Boolean|true|false|
 |customNavHeight|自定义导航栏的高度，单位默认px|String|Number|0|
 
-### [#](http://118.25.198.98/components/indexList.html#indexanchor-props) IndexAnchor Props
+### [#]() IndexAnchor Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -23,13 +23,13 @@
 |bgColor|列表锚点背景颜色|String|#dedede|\-|
 |height|列表锚点高度，单位默认px|String|Number|32|
 
-### [#](http://118.25.198.98/components/indexList.html#indexbar-events) IndexBar Events
+### [#]() IndexBar Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
 |select|选中右边索引字符时触发|index: 索引字符|\-|
 
-### [#](http://118.25.198.98/components/indexList.html#indexitem-slots) IndexItem Slots
+### [#]() IndexItem Slots
 
 |名称|说明|
 |---|---|

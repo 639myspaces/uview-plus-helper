@@ -1,4 +1,4 @@
-## [#](http://118.25.198.98/components/feedback.html#feedback-%E5%85%A8%E5%B1%80%E5%8F%8D%E9%A6%88-3-6-25) Feedback 全局反馈 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/feedback.html#api)
+## [#]() Feedback 全局反馈 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/feedback.html#api)
 
 提供 Toast 消息提示、Modal 弹窗、Loading 加载、ActionSheet 无需引入组件，即可全局调用
 
@@ -7,9 +7,9 @@
 该功能仅支持 Vue3，Vue2 暂不支持
 
 
-## [#](http://118.25.198.98/components/feedback.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/feedback.html#showtoast-%E5%8F%82%E6%95%B0) showToast 参数
+### [#]() showToast 参数
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -21,7 +21,7 @@
 |success|完成回调函数|Function|\-|\-|
 |更多属性参考 toast 组件|\-|\-|
 
-### [#](http://118.25.198.98/components/feedback.html#showloading-%E5%8F%82%E6%95%B0) showLoading 参数
+### [#]() showLoading 参数
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -30,7 +30,7 @@
 |duration|显示时长，0 表示不自动隐藏|Number|0|\-|
 |更多属性参考 toast 组件|\-|\-|
 
-### [#](http://118.25.198.98/components/feedback.html#showmodal-%E5%8F%82%E6%95%B0) showModal 参数
+### [#]() showModal 参数
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -45,7 +45,7 @@
 |success|用户选择回调函数|Function|\-|\-|
 |更多属性参考 modal 组件|\-|\-|
 
-### [#](http://118.25.198.98/components/feedback.html#showactionsheet-%E5%8F%82%E6%95%B0) showActionSheet 参数
+### [#]() showActionSheet 参数
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -62,16 +62,16 @@
 |cancel|取消回调函数|Function|\-|\-|
 |更多属性参考 actionSheet 组件|\-|\-|
 
-### [#](http://118.25.198.98/components/feedback.html#%E5%9B%9E%E8%B0%83%E5%8F%82%E6%95%B0) 回调参数
+### [#]() 回调参数
 
-#### [#](http://118.25.198.98/components/feedback.html#showmodal-success-%E5%9B%9E%E8%B0%83%E5%8F%82%E6%95%B0) showModal success 回调参数
+#### [#]() showModal success 回调参数
 
 |参数|说明|类型|
 |---|---|---|
 |confirm|用户是否点击确定|Boolean|
 |cancel|用户是否点击取消|Boolean|
 
-#### [#](http://118.25.198.98/components/feedback.html#showactionsheet-success-%E5%9B%9E%E8%B0%83%E5%8F%82%E6%95%B0) showActionSheet success 回调参数
+#### [#]() showActionSheet success 回调参数
 
 |参数|说明|类型|
 |---|---|---|
@@ -79,7 +79,7 @@
 |value|选中项的值|Any|
 |index|选中项的索引|Number|
 
-#### [#](http://118.25.198.98/components/feedback.html#showactionsheet-cancel-%E5%9B%9E%E8%B0%83%E5%8F%82%E6%95%B0) showActionSheet cancel 回调参数
+#### [#]() showActionSheet cancel 回调参数
 
 |参数|说明|类型|
 |---|---|---|

@@ -1,9 +1,9 @@
 宫格组件一般用于同时展示多个同类项目的场景，可以给宫格的项目设置徽标组件([badge](http://118.25.198.98/components/badge.html))，或者图标等，也可以扩展为左右滑动的轮播形式。
 
 
-### [#](http://118.25.198.98/components/grid.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/grid.html#grid-props) Grid Props
+### [#]() Grid Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -14,14 +14,14 @@
 |round 3.6.9|设置圆角值|string|\-|
 |bgColor 3.6.9|背景颜色|string|\-|
 
-### [#](http://118.25.198.98/components/grid.html#grid-item-props) Grid-item Props
+### [#]() Grid-item Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
 |name|宫格的name|String|Number|\-|
 |bgColor|宫格的背景颜色|String|transparent(背景透明)|\-|
 
-### [#](http://118.25.198.98/components/grid.html#grid-event) Grid Event
+### [#]() Grid Event
 
 注意：请在`<u-grid></u-grid>`上监听此事件
 
@@ -29,7 +29,7 @@
 |---|---|---|
 |click|点击宫格触发|name|
 
-### [#](http://118.25.198.98/components/grid.html#grid-item-event) Grid-item Event
+### [#]() Grid-item Event
 
 注意：请在`<u-grid-item></u-grid-item>`上监听此事件
 

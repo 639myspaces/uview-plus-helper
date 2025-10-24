@@ -1,9 +1,9 @@
 弹出层容器，用于展示弹窗、信息提示等内容，支持上、下、左、右和中部弹出。组件只提供容器，内部内容由用户自定义。
 
 
-### [#](http://118.25.198.98/components/popup.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/popup.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -33,14 +33,14 @@
 |bgColor|背景色，一般用于特殊弹窗内容场景，设置为`transparent`可去除默认的白色背景|String|\-|\-|
 |customStyle|用户自定义样式|Object|\-|\-|
 
-### [#](http://118.25.198.98/components/popup.html#slot) Slot
+### [#]() Slot
 
 |名称|说明|
 |---|---|
 |header|自定义标题|
 |trigger|自定义触发|
 
-### [#](http://118.25.198.98/components/popup.html#event) Event
+### [#]() Event
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

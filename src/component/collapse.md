@@ -1,9 +1,9 @@
 通过折叠面板收纳内容区域
 
 
-### [#](http://118.25.198.98/components/collapse.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/collapse.html#collapse-props) Collapse Props
+### [#]() Collapse Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -11,7 +11,7 @@
 |accordion|是否手风琴模式|Boolean|false|true|
 |border|是否显示外边框|Boolean|true|false|
 
-### [#](http://118.25.198.98/components/collapse.html#collapse-item-props) Collapse Item Props
+### [#]() Collapse Item Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -27,7 +27,7 @@
 |icon|标题左侧图片，可为绝对路径的图片或内置图标|String|\-|\-|
 |duration|面板展开收起的过渡时间，单位`ms`|Number|300|\-|
 
-### [#](http://118.25.198.98/components/collapse.html#collapse-event) Collapse Event
+### [#]() Collapse Event
 
 注意：请在`<u-collapse></u-collapse>`上监听此事件
 
@@ -37,7 +37,7 @@
 |open|当前激活面板展开时触发(如果是手风琴模式，参数activeNames类型为String，否则为Array)|activeNames: String|
 |close|当前激活面板关闭时触发(如果是手风琴模式，参数activeNames类型为String，否则为Array)|activeNames: String|
 
-### [#](http://118.25.198.98/components/collapse.html#collapse-methods) Collapse Methods
+### [#]() Collapse Methods
 
 注意：此方法需要通过`ref`调用
 
@@ -45,7 +45,7 @@
 |---|---|
 |init|重新初始化内部高度计算，用于异步获取内容的情形，请结合`this.$nextTick()`使用|
 
-### [#](http://118.25.198.98/components/collapse.html#slot) Slot
+### [#]() Slot
 
 微信小程序不支持`slot`写法
 

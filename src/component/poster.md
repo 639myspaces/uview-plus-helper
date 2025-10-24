@@ -1,8 +1,8 @@
-## [#](http://118.25.198.98/components/poster.html#poster-%E6%B5%B7%E6%8A%A5%E7%94%9F%E6%88%90%E5%99%A8-3-6-0) Poster 海报生成器 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/poster.html#api)
+## [#]() Poster 海报生成器 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/poster.html#api)
 
 海报生成组件，提供了强大的海报生成能力，支持文字、图片、二维码，可以轻松生成各种精美的海报。
 
-## [#](http://118.25.198.98/components/poster.html#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF) 使用场景
+## [#]() 使用场景
 
 -   生成商品海报、活动海报、分享图片等
 -   动态生成包含文字、图片、矩形、二维码的复杂布局
@@ -11,9 +11,9 @@
 -   配合可视化设计工具，实现所见即所得的海报设计
 
 
-## [#](http://118.25.198.98/components/poster.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/poster.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -28,20 +28,20 @@
 |fileType|文件类型|String|"jpg"|jpg|
 |quality|质量|Number|1|0-1|
 
-### [#](http://118.25.198.98/components/poster.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |success|图片生成成功时触发|(path: String) 生成的图片路径|
 |error|图片生成失败时触发|(error: Object) 错误信息|
 
-### [#](http://118.25.198.98/components/poster.html#methods) Methods
+### [#]() Methods
 
 |方法名|说明|参数|
 |---|---|---|
 |render|手动触发渲染|(data?: Object) 海报数据|
 
-## [#](http://118.25.198.98/components/poster.html#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9) 注意事项
+## [#]() 注意事项
 
 1.  **图片资源**：确保图片URL可访问，建议使用HTTPS链接
 2.  **字体支持**：某些字体在小程序环境下可能不支持，建议使用系统默认字体

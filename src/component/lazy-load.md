@@ -7,9 +7,9 @@
 由于右侧的演示是通过iframe标签引入的，缺少了手机端运行的相关API，或者因为演示区域太小，或者电脑分别率不够高，导致演示可能会有问题，手机端有不会这些问题，请在右上角的"演示"中用手机扫码查看对应的效果。
 
 
-### [#](http://118.25.198.98/components/lazyLoad.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/lazyLoad.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@
 |height|图片高度，注意：实际高度可能受`img-mode`参数影响|String|Number|450|
 |mode|图片的裁剪模式，详见[image组件裁剪模式 (opens new window)](https://uniapp.dcloud.io/component/image)|String|Number|widthFix|
 
-### [#](http://118.25.198.98/components/lazyLoad.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

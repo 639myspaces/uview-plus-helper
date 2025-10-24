@@ -1,9 +1,9 @@
 区隔内容的分割线，一般用于页面底部"没有更多"的提示。
 
 
-### [#](http://118.25.198.98/components/divider.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/divider.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -17,13 +17,13 @@
 |bold|文本加粗|Boolean|false|\-|
 |lineColor|线条颜色|String|#dcdfe6|\-|
 
-### [#](http://118.25.198.98/components/divider.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
 |click|divider组件被点击时触发|\-|\-|
 
-### [#](http://118.25.198.98/components/divider.html#slots) Slots 3.3.1
+### [#]() Slots 3.3.1
 
 |名称|说明|参数|
 |---|---|---|

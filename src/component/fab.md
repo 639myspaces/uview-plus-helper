@@ -1,9 +1,9 @@
 悬浮动作按钮组件，按下可显示一组动作按钮，支持多种位置和拖动模式。
 
 
-## [#](http://118.25.198.98/components/fab.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/fab.html#fab-props) Fab Props
+### [#]() Fab Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -21,7 +21,7 @@
 |expandable|是否可展开|Boolean|true|true / false|
 |custom-style|自定义样式|Object|{}|\-|
 
-### [#](http://118.25.198.98/components/fab.html#fab-events) Fab Events
+### [#]() Fab Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -29,7 +29,7 @@
 |change|菜单状态改变时触发|\-|
 |update:active|激活状态改变时触发|active: Boolean|
 
-### [#](http://118.25.198.98/components/fab.html#fab-slots) Fab Slots
+### [#]() Fab Slots
 
 |名称|说明|
 |---|---|

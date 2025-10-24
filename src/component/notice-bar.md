@@ -1,9 +1,9 @@
 该组件用于滚动通告场景，有多种模式可供选择
 
 
-### [#](http://118.25.198.98/components/noticeBar.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/noticeBar.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -21,7 +21,7 @@
 |url|跳转的页面路径|String|\-|\-|
 |linkType|页面跳转的类型|String|navigateTo|\-|
 
-### [#](http://118.25.198.98/components/noticeBar.html#events) Events
+### [#]() Events
 
 详细解释见上方说明
 

@@ -1,9 +1,9 @@
 图片剪裁组件，支持图片选择、裁剪、旋转等功能，适用于头像上传、图片编辑等场景。
 
 
-### [#](http://118.25.198.98/components/cropper.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/cropper.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -18,7 +18,7 @@
 |openType 3.6.43|微信小程序开放能力，设置为chooseAvatar后，可选择微信头像|String|''|chooseAvatar|
 |watermark 3.5.41|水印配置对象|Object|{}|\-|
 
-### [#](http://118.25.198.98/components/cropper.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

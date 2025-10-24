@@ -9,16 +9,16 @@
 2.  由于普通的组件无法覆盖原生组件，所以本组件不适用那些有`video`，`map`等原生表现的组件的页面，可以自行使用uni的`cover-view`组件修改
 
 
-### [#](http://118.25.198.98/components/noNetwork.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/noNetwork.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
 |tips|没有网络时的提示语|String|哎呀，网络信号丢失|\-|
 |image|无网络的图片提示，可用的src地址或base64图片|String|\-|\-|
 
-### [#](http://118.25.198.98/components/noNetwork.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

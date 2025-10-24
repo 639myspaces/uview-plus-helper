@@ -5,9 +5,9 @@
 由于在`nvue`下，`u-text`名称被uni-app官方占用，在`nvue`页面中请使用`u-text`名称，在`vue`页面中使用`u-text`或者`u-text`均可。
 
 
-### [#](http://118.25.198.98/components/text.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/text.html#list-props) List Props
+### [#]() List Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -33,7 +33,7 @@
 |align|文本对齐方式|String|left|center/right|
 |wordWrap|文字换行|String|normal|break-word/anywhere|
 
-### [#](http://118.25.198.98/components/text.html#list-events) List Events
+### [#]() List Events
 
 |事件名|说明|回调参数|
 |---|---|---|

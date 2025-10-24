@@ -1,9 +1,9 @@
 此选择器用于单列，多列，多列联动的选择场景。
 
 
-### [#](http://118.25.198.98/components/picker.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/picker.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -26,14 +26,14 @@
 |immediateChange 2.0.22|是否在手指松开时立即触发`change`事件。若不开启则会在滚动动画结束后触发`change`事件，只在微信`2.21.1`及以上有效|Boolean|false|true|
 |round 3.0.1|圆角值，默认无圆角|String|Number|0|
 
-### [#](http://118.25.198.98/components/picker.html#methods) Methods
+### [#]() Methods
 
 |名称|说明|
 |---|---|
 |setIndexs|(index, setLastIndex) 设置对应列的选择值|
 |setColumnValues|多列联动时需要用到，见上方说明，注意`微信小程序`的特殊用法|
 
-### [#](http://118.25.198.98/components/picker.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
@@ -42,7 +42,7 @@
 |change|当选择值变化时触发|Array: 见上方"回调参数"部分说明|\-|
 |cancel|点击取消按钮|\-|\-|
 
-### [#](http://118.25.198.98/components/picker.html#slot) Slot 3.0.1
+### [#]() Slot 3.0.1
 
 |名称|说明|
 |---|---|

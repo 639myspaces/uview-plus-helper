@@ -1,9 +1,9 @@
 该组件为高性能列表组件
 
 
-### [#](http://118.25.198.98/components/list.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/list.html#list-props) List Props
+### [#]() List Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -22,14 +22,14 @@
 |width|列表宽度|String|Number|0|
 |preLoadScreen|列表前后预渲染的屏数，1 代表一个屏幕的高度，1.5 代表 1 个半屏幕高度|String|Number|1|
 
-### [#](http://118.25.198.98/components/list.html#list-events) List Events
+### [#]() List Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |scroll|滚动条滚动触发事件|scrollTop: 滚动条位置|
 |scrolltolower|滚动到底部触发事件|\-|
 
-### [#](http://118.25.198.98/components/list.html#listitem-props) ListItem Props
+### [#]() ListItem Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

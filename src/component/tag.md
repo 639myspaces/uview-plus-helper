@@ -1,9 +1,9 @@
 tag 组件一般用于标记和选择，我们提供了更加丰富的表现形式，能够较全面的涵盖您的使用场景
 
 
-### [#](http://118.25.198.98/components/tag.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/tag.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -26,7 +26,7 @@ tag 组件一般用于标记和选择，我们提供了更加丰富的表现形�
 |animation|是否开启过渡动画|Boolean|true|false|
 |closeInside|关闭按钮是不是内嵌在标签内|Boolean|false|true|
 
-### [#](http://118.25.198.98/components/tag.html#event) Event
+### [#]() Event
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

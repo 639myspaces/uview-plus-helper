@@ -1,9 +1,9 @@
 此组件为一个小动画，目前用在uView的[loadMore加载更多](http://118.25.198.98/components/loadMore.html)等组件的正在加载状态场景。
 
 
-### [#](http://118.25.198.98/components/loadingIcon.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/loadingIcon.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

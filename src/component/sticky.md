@@ -1,9 +1,9 @@
 该组件与CSS中`position: sticky`属性实现的效果一致，当组件达到预设的到顶部距离时， 就会固定在指定位置，组件位置大于预设的顶部距离时，会重新按照正常的布局排列。
 
 
-### [#](http://118.25.198.98/components/sticky.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/sticky.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

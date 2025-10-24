@@ -1,9 +1,9 @@
 该组件一般使用于某个活动的截止时间上，通过数字的变化，给用户明确的时间感受，提示用户进行某一个行为操作。
 
 
-### [#](http://118.25.198.98/components/countDown.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/countDown.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -12,14 +12,14 @@
 |autoStart|是否自动开始倒计时|Boolean|true|false|
 |millisecond|是否展示毫秒倒计时|Boolean|false|true|
 
-### [#](http://118.25.198.98/components/countDown.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |change|过程中，倒计时变化时触发|time: 剩余的时间|
 |finish|倒计时结束|\-|
 
-### [#](http://118.25.198.98/components/countDown.html#methods) Methods
+### [#]() Methods
 
 需要通过ref获取倒计时组件才能调用
 

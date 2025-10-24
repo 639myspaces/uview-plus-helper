@@ -5,9 +5,9 @@
 -   在H5中通过`window.open`打开链接
 
 
-### [#](http://118.25.198.98/components/link.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/link.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|

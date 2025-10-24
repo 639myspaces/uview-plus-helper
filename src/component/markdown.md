@@ -1,16 +1,16 @@
 该组件基于 [markdown-it (opens new window)](https://github.com/markdown-it/markdown-it) 实现，用于解析和渲染Markdown格式的文本内容，支持语法高亮、代码复制等功能。
 
 
-### [#](http://118.25.198.98/components/markdown.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/markdown.html#props) Props
+### [#]() Props
 
 |属性名|说明|类型|默认值|可选值|平台差异说明|
 |---|---|---|---|---|---|
 |content|要渲染的Markdown内容|String|''|\-|\-|
 |showLine|代码块是否显示行号|Boolean|true|false|\-|
 
-### [#](http://118.25.198.98/components/markdown.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|

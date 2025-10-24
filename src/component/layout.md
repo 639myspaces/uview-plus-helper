@@ -5,9 +5,9 @@
 如需实现类似宫格的布局，请使用uView的[Grid宫格组件](http://118.25.198.98/components/grid.html)，可以设置角标，功能更完善和灵活
 
 
-### [#](http://118.25.198.98/components/layout.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/layout.html#row-props) Row Props
+### [#]() Row Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -17,7 +17,7 @@
 |align|垂直排列方式|String|center|top / bottom|
 |wrap 3.6.4|排列时是否换行|Boolean|false|true|
 
-### [#](http://118.25.198.98/components/layout.html#col-props) Col Props
+### [#]() Col Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -27,13 +27,13 @@
 |align|垂直对齐方式|String|stretch|`top`、`center`、`bottom`、`stretch`|
 |textAlign|文字水平对齐方式|String|left|center / right|
 
-### [#](http://118.25.198.98/components/layout.html#row-events) Row Events
+### [#]() Row Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |click|`row`被点击|\-|
 
-### [#](http://118.25.198.98/components/layout.html#col-events) Col Events
+### [#]() Col Events
 
 |事件名|说明|回调参数|
 |---|---|---|

@@ -1,9 +1,9 @@
 该组件一个用于长页面，滑动一定距离后，出现返回顶部按钮，方便快速返回顶部的场景。
 
 
-### [#](http://118.25.198.98/components/backTop.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/backTop.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -19,7 +19,7 @@
 |iconStyle|图标的样式，对象形式|Object|\-|\-|
 |customStyle|按钮外层的自定义样式|Object|\-|\-|
 
-### [#](http://118.25.198.98/components/backTop.html#slot) Slot
+### [#]() Slot
 
 |名称|说明|
 |---|---|

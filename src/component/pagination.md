@@ -5,9 +5,9 @@
 VUE2版本下，微信小程序会控制台会报 `More than one slot named "page" are found inside a single component instance` 的警告，VUE3版本无问题，推荐使用VUE3
 
 
-### [#](http://118.25.198.98/components/pagination.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/pagination.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -34,13 +34,13 @@ VUE2版本下，微信小程序会控制台会报 `More than one slot named "pag
 |itemHeight|每项高度|String|'34px'|\-|
 |customStyle|自定义样式|Object|{}|\-|
 
-### [#](http://118.25.198.98/components/pagination.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |change|切换分页时触发|page: 当前页码|
 
-### [#](http://118.25.198.98/components/pagination.html#slots) Slots
+### [#]() Slots
 
 |名称|说明|参数|
 |---|---|---|

@@ -1,9 +1,9 @@
 该组件用于需要加载内容，但是加载的第一页数据就为空，提示一个"没有内容"的场景， 我们精心挑选了十几个场景的图标，方便您使用。
 
 
-### [#](http://118.25.198.98/components/empty.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/empty.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -19,7 +19,7 @@
 |show|是否显示组件|Boolean|true|false|
 |marginTop|组件到上一个元素的间距,单位px|String|Number|0|
 
-### [#](http://118.25.198.98/components/empty.html#slot) Slot
+### [#]() Slot
 
 |名称|说明|
 |---|---|

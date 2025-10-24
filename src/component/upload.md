@@ -1,9 +1,9 @@
 该组件用于上传图片场景
 
 
-### [#](http://118.25.198.98/components/upload.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/upload.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -41,7 +41,7 @@ WARNING
 
 在H5端，由于图片压缩采用`canvas`实现，压缩后使用 `URL.createObjectURL` 方法转换为 `tempFilePath`，若直接使用 `filePath` 参数进行上传，会导致后端无法正常获取上传文件的原始名称，因此建议使用 `file` 属性进行上传。
 
-### [#](http://118.25.198.98/components/upload.html#methods) Methods
+### [#]() Methods
 
 此方法如要通过 ref 手动调用
 
@@ -50,7 +50,7 @@ WARNING
 |afterRead|读取后的处理函数|
 |beforeRead|读取前的处理函数|
 
-### [#](http://118.25.198.98/components/upload.html#slot) Slot
+### [#]() Slot
 
 slot 中您可以内置任何您所需要的样式。
 
@@ -58,7 +58,7 @@ slot 中您可以内置任何您所需要的样式。
 |---|---|
 |\-(default)|自定义上传样式|
 
-### [#](http://118.25.198.98/components/upload.html#events) Events
+### [#]() Events
 
 回调参数中的`event`参数，为当前删除元素的所有信息，`index`为当前操作的图片的索引，`name`为删除名称，`file`包含删除的 url 信息
 

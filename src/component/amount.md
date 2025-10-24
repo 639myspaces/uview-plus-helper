@@ -1,9 +1,9 @@
 本组件一个专门用于展示金额、价格等金融数字的组件，支持多种格式化选项、动画效果和中文大写转换。
 
 
-## [#](http://118.25.198.98/components/amount.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/amount.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|
 |---|---|---|---|
@@ -25,7 +25,7 @@
 |color|颜色，支持使用主题色|String|''|
 |customStyle|自定义样式|Object|{}|
 
-### [#](http://118.25.198.98/components/amount.html#slots) Slots
+### [#]() Slots
 
 |名称|说明|参数|
 |---|---|---|

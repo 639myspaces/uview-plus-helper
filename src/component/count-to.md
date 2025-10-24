@@ -5,9 +5,9 @@
 如果给组件的父元素设置`text-align: center`想让数字水平居中，可能是由于元素内容快速变化而导致渲染的问题，在APP上组件可能会有轻微的左右抖动现象， 解决办法是给父元素设置`padding-left`或者`margin-left`即可。
 
 
-### [#](http://118.25.198.98/components/countTo.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/countTo.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -23,7 +23,7 @@
 |bold|字体是否加粗|Boolean|false|true|
 |separator|千位分隔符，见上方说明|String|\-|\-|
 
-### [#](http://118.25.198.98/components/countTo.html#methods) Methods
+### [#]() Methods
 
 此方法如要通过ref手动调用
 
@@ -33,7 +33,7 @@
 |reStart|暂停后重新开始滚动(从暂停前的值开始滚动)|
 |paused|暂停滚动|
 
-### [#](http://118.25.198.98/components/countTo.html#event) Event
+### [#]() Event
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

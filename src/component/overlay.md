@@ -1,9 +1,9 @@
 创建一个遮罩层，用于强调特定的页面元素，并阻止用户对遮罩下层的内容进行操作，一般用于弹窗场景
 
 
-### [#](http://118.25.198.98/components/overlay.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/overlay.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -12,13 +12,13 @@
 |duration|动画时长，单位毫秒|String|Number|300|
 |opacity|不透明度值，当做rgba的第四个参数|String|Number|0.5|
 
-### [#](http://118.25.198.98/components/overlay.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |click|点击遮罩发送此事件|\-|
 
-### [#](http://118.25.198.98/components/overlay.html#slot) Slot
+### [#]() Slot
 
 |名称|说明|
 |---|---|

@@ -1,11 +1,11 @@
-## [#](http://118.25.198.98/components/inputTag.html#inputtag-%E8%BE%93%E5%85%A5%E6%A0%87%E7%AD%BE-3-6-22) InputTag 输入标签 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/inputTag.html#api)
+## [#]() InputTag 输入标签 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/inputTag.html#api)
 
 用于在输入框中快速录入多个标签项，支持折叠展示、最大数量限制、禁用、内嵌标签等能力，移动端友好。
 
 
-## [#](http://118.25.198.98/components/inputTag.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/inputTag.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -30,7 +30,7 @@
 
 > 颜色说明：`tagBgColor` 支持 uView next预设色（如 `primary`、`warning`）或十六进制 / rgb / rgba 自定义色；当使用自定义浅色时，`tagColor` 建议指定为深色以增强可读性。
 
-### [#](http://118.25.198.98/components/inputTag.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -38,7 +38,7 @@
 |addTag|新增标签时触发|String 新增的标签值|
 |removeTag|移除标签时触发|String 被移除的标签值|
 
-### [#](http://118.25.198.98/components/inputTag.html#slots) Slots
+### [#]() Slots
 
 当前组件无插槽。
 

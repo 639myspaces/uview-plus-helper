@@ -1,4 +1,4 @@
-## [#](http://118.25.198.98/components/popover.html#%E4%BB%8B%E7%BB%8D) 介绍
+## [#]() 介绍
 
 Popover 气泡弹出框是一个轻量级的弹出层组件，用于显示提示信息或额外内容。支持多种弹出方向和位置，具有良好的交互体验。
 
@@ -7,9 +7,9 @@ Popover 气泡弹出框是一个轻量级的弹出层组件，用于显示提示
 由于小程序无法监听点击自己以外的地方，为了在点击页面其他地方时，可以自动关闭 popover ，所以需要在页面的根元素上绑定点击事件，并发送 uni.$emit('u-popover-close') 事件
 
 
-## [#](http://118.25.198.98/components/popover.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/popover.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -33,7 +33,7 @@ Popover 气泡弹出框是一个轻量级的弹出层组件，用于显示提示
 |popoverStyle|自定义弹出层样式|Object|{}|\-|
 |showOverlay 3.6.7|是否显示遮罩层|Boolean|false|true|
 
-### [#](http://118.25.198.98/components/popover.html#slots) Slots
+### [#]() Slots
 
 |名称|说明|参数|
 |---|---|---|

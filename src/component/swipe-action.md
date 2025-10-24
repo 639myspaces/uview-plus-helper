@@ -5,21 +5,21 @@
 如果把该组件通过v-for用于左滑删除的列表，请保证循环的`:key`是一个唯一值，可以用数据的id或者title替代。 不能是数组循环的index，否则删除的时候，可能会出现数据错乱
 
 
-### [#](http://118.25.198.98/components/swipeAction.html#api) API
+### [#]() API
 
-### [#](http://118.25.198.98/components/swipeAction.html#swipeaction-props) SwipeAction Props
+### [#]() SwipeAction Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
 |autoClose|是否自动关闭其他swipe按钮组|Boolean|true|false|
 
-### [#](http://118.25.198.98/components/swipeAction.html#swipeaction-event) SwipeAction Event
+### [#]() SwipeAction Event
 
 |事件名|说明|回调参数|
 |---|---|---|
 |click|点击组件时触发|(index)|
 
-### [#](http://118.25.198.98/components/swipeAction.html#swipeactionitem-props) SwipeActionItem Props
+### [#]() SwipeActionItem Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -33,7 +33,7 @@
 |duration|动画过渡时间，单位ms|String|Number|300|
 |name|标识符，如果是v-for，可用index索引值|String|Number|\-|
 
-### [#](http://118.25.198.98/components/swipeAction.html#swipeactionitem-event) SwipeActionItem Event
+### [#]() SwipeActionItem Event
 
 |事件名|说明|回调参数|
 |---|---|---|

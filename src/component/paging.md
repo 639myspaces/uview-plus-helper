@@ -3,9 +3,9 @@
 支持下拉刷新和下滑加载更多，在app-vue、h5、微信小程序、QQ小程序上使用wxs+renderjs在视图层实现下拉刷新，提供了更性能。
 
 
-## [#](http://118.25.198.98/components/paging.html#api) API
+## [#]() API
 
-### [#](http://118.25.198.98/components/paging.html#props) Props
+### [#]() Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@
 |loadingMoreDefaultText|上拉加载更多时的默认提示文字|String|'加载更多...'|\-|
 |loadingMoreNoMoreText|没有更多数据时的提示文字|String|'没有更多数据了'|\-|
 
-### [#](http://118.25.198.98/components/paging.html#events) Events
+### [#]() Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -34,7 +34,7 @@
 |complete|完成加载事件|(data, hasMore)|
 |clear|重置状态事件，无参数|\-|
 
-### [#](http://118.25.198.98/components/paging.html#methods) Methods
+### [#]() Methods
 
 |方法名|说明|参数|
 |---|---|---|
@@ -42,7 +42,7 @@
 |clear|清空数据列表|\-|
 |reload|重新加载数据|\-|
 
-### [#](http://118.25.198.98/components/paging.html#slots) Slots
+### [#]() Slots
 
 |插槽名|说明|
 |---|---|
