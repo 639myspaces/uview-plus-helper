@@ -7,7 +7,7 @@
   "license": "MIT",
   "author": {
     "name": "哈哈先生",
-    "url": "https://gitee.com/my_spaces/uview-next-helper.git"
+    "url": "https://github.com/639myspaces/uview-next-helper"
   },
   "engines": {
     "vscode": "^1.74.0"
@@ -22,7 +22,7 @@
   "icon": "public/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/my_spaces/uview-next-helper.git"
+    "url": "https://github.com/639myspaces/uview-next-helper"
   },
   "keywords": [
     "uniapp",
@@ -95,6 +95,7 @@
   "scripts": {
     "clean:cache": "npm cache clean --force",
     "dev": "npm run package",
+    "create-namespace": "npx ovsx publish -p <token>",
     "login": "vsce login 你的发布者名称",
     "build": "vsce package",
     "patch": "vsce publish patch",
