@@ -3,7 +3,7 @@
 
 ### API
 
-### IndexBar Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -23,7 +23,7 @@
 |bgColor|列表锚点背景颜色|String|#dedede|\-|
 |height|列表锚点高度，单位默认px|String|Number|32|
 
-### IndexBar Events
+###  Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

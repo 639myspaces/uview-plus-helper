@@ -7,13 +7,13 @@
 
 ### API
 
-### SwipeAction Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
 |autoClose|是否自动关闭其他swipe按钮组|Boolean|true|false|
 
-### SwipeAction Event
+###  Event
 
 |事件名|说明|回调参数|
 |---|---|---|

@@ -274,13 +274,17 @@ export function parseComponentMarkdown(
       // 将组件名从 kebab-case 转换为 PascalCase 用于匹配标题
       // 提取子组件 Props 表格
       const props = extractTableSection(content, "Props", componentName);
-      const methods = extractTableSection(content, "Methods", componentName);
+      const methods = extractTableSection(content, "Methods", componentName).concat(
+        extractTableSection(content, "Method")
+      );
       // 提取子组件 Slot 表格（同时处理 Slot 和 Slots 两种可能的标题）
       const slots = extractTableSection(content, "Slot", componentName).concat(
         extractTableSection(content, "Slots", componentName)
       );
       // 提取子组件 Events 表格
-      const events = extractTableSection(content, "Events", componentName);
+      const events = extractTableSection(content, "Event", componentName).concat(
+        extractTableSection(content, "Events")
+      );
       // 提取子组件外部样式类表格
       const externalClasses = extractTableSection(
         content,
@@ -357,7 +361,9 @@ export function parseComponentMarkdown(
     const slots = extractTableSection(content, "Slot").concat(
       extractTableSection(content, "Slots")
     );
-    const methods = extractTableSection(content, "Methods");
+    const methods = extractTableSection(content, "Methods").concat(
+      extractTableSection(content, "Method")
+    );
     // 提取外部样式类表格
     const externalClasses = extractTableSection(content, "外部样式类");
     // 提取自定义数据结构表格
@@ -479,7 +485,7 @@ function extractTableSection(
     ).filter(row => row.length > 0); // 过滤无效行
   };
 
-  /* ===== 1. 精确匹配：整行等于 "## PascalCase Attributes" ===== */
+  /* ===== 1.  "## PascalCase" ===== */
   if (componentName) {
     // 将组件名从 kebab-case 转换为 PascalCase 用于匹配标题
     const pascal = componentName
@@ -499,13 +505,10 @@ function extractTableSection(
     }
   }
 
-  /* ===== 2. 模糊匹配：行内包含组件名+标题 ===== */
+  /* ===== 1.  "## Pascal-Case" ===== */
   if (componentName) {
     // 将组件名从 kebab-case 转换为 PascalCase
-    const pascal = componentName
-      .split("-")
-      .map((w) => w.charAt(0).toUpperCase() + "-" + w.slice(1))
-      .join("");
+    const pascal = componentName;
     // 构建模糊匹配的正则表达式（允许组件名前后有其他字符）
     const fuzzyReg = new RegExp(
       `(?:^|\\n)#{2,3}\\s*\\w*${pascal}\\w*\\s+${escape(sectionTitle)}\\s*$`,
@@ -521,7 +524,7 @@ function extractTableSection(
   /* ===== 3. 通用回落：纯 "## Attributes" ===== */
   // 如果前面两种匹配都失败，尝试匹配通用的标题格式
   const normalReg = new RegExp(
-    `(?:^|\\n)#{2,3}\\s*[^\\n]*${escape(sectionTitle)}[^\\n]*\\s*$`,
+     `(?:^|\\n)#{2,3}\\s*${escape(sectionTitle)}\\s*$`,
     "im"
   );
   const m = normalReg.exec(content);

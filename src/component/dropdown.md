@@ -3,7 +3,7 @@
 
 ### API
 
-### Dropdown Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -23,7 +23,7 @@
 |menuIconSize|标题菜单右侧的图标的大小，单位任意|String|Number|16|
 
 
-### Dropdown Events
+###  Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -62,7 +62,7 @@
 |closed|关闭菜单项且动画结束后触发|\-|
 
 
-### Dropdown Methods
+###  Methods
 
 这些为组件内部的方法，需要通过`ref`调用
 

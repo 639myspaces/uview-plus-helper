@@ -3,7 +3,7 @@
 
 ## API
 
-### Ellipsis Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -19,7 +19,7 @@
 |action-color|展开/收起按钮颜色|String|#3c9cff|\-|
 |custom-style|自定义样式|Object|\-|\-|
 
-### Ellipsis Events
+###  Events
 
 |事件名|说明|回调参数|
 |---|---|---|

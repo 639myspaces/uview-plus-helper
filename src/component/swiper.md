@@ -8,7 +8,7 @@
 
 ### API
 
-### Swiper Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -37,7 +37,7 @@
 |loading|是否加载中|Boolean|false|true|
 |showTitle|是否显示标题，要求数组对象中有 title 属性|Boolean|false|\-|
 
-### Swiper Events
+###  Events
 
 |事件名|说明|回调参数|
 |---|---|---|

@@ -3,7 +3,7 @@
 
 ## API
 
-### Fab Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -21,7 +21,7 @@
 |expandable|是否可展开|Boolean|true|true / false|
 |custom-style|自定义样式|Object|{}|\-|
 
-### Fab Events
+###  Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -29,7 +29,7 @@
 |change|菜单状态改变时触发|\-|
 |update:active|激活状态改变时触发|active: Boolean|
 
-### Fab Slots
+###  Slots
 
 |名称|说明|
 |---|---|

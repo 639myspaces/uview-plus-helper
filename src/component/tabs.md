@@ -5,7 +5,7 @@
 
 ### API
 
-### u-tabs Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@
 |swipeable|是否启用左右滑动切换，注意仅子组件方式有效|
 |height|内容高度|
 
-### u-tabs Events
+###  Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
@@ -33,7 +33,7 @@
 |change|标签索引改变时触发(`disabled`时不会触发)|index: 标签索引值，item: 传入的其他值|\-|
 |longPress|长按标签时触发|index: 标签索引值，item: 传入的其他值|\-|
 
-### u-tabs-item Props
+### tabs-item Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -43,7 +43,7 @@
 |dot|是否显示圆点，将会覆盖badge参数|Boolean|false|true|
 |customStyle|定义需要用到的外部样式|Object|{}|\-|
 
-### u-tabs Slots
+###  Slots
 
 |名称|说明|
 |---|---|

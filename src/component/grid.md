@@ -3,7 +3,7 @@
 
 ### API
 
-### Grid Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -21,7 +21,7 @@
 |name|宫格的name|String|Number|\-|
 |bgColor|宫格的背景颜色|String|transparent(背景透明)|\-|
 
-### Grid Event
+###  Event
 
 注意：请在`<u-grid></u-grid>`上监听此事件
 

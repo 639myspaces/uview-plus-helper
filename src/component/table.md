@@ -3,7 +3,7 @@
 
 ### API
 
-### Table Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -31,7 +31,7 @@
 |summaryMethod|自定义的合计计算方法|Function|null|\-|
 |summaryColumns|需要合计的列（prop数组）|Array|\[\]|\-|
 
-### Table Events
+###  Events
 
 |事件名称|说明|回调参数|
 |---|---|---|
@@ -41,14 +41,14 @@
 |select|用户手动勾选数据行的 Checkbox 时触发的事件|selection（当前选中行数据的数组）, row（当前行数据）|
 |select-all|用户手动勾选全选 Checkbox 时触发的事件|selection（当前选中行数据的数组）|
 
-### Table Slots
+###  Slots
 
 |插槽名称|说明|
 |---|---|
 |default|表格列内容|
 |empty|空数据时的内容|
 
-### Table Methods
+###  Methods
 
 |方法名|说明|参数|
 |---|---|---|
@@ -56,7 +56,7 @@
 |clearSelection|用于多选表格，清空用户的选择|\-|
 |getSelectionRows|用于多选表格，返回当前选中的行|\-|
 
-### Table Column Props
+### TableColumn Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -74,13 +74,13 @@
 |headerAlign|表头对齐方式|String|left|left|
 |customStyle|定义需要用到的外部样式|Object|{}|\-|
 
-### Table Column Events
+### TableColumn Events
 
 |事件名称|说明|回调参数|
 |---|---|---|
 |cell-click|单元格点击事件|{ row, column, rowIndex, columnIndex, value }|
 
-### Table Column Slots
+### TableColumn Slots
 
 |插槽名称|说明|参数|
 |---|---|---|

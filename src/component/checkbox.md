@@ -3,7 +3,7 @@
 
 ## API
 
-### Checkbox Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -49,7 +49,7 @@
 |plain|镂空样式|Boolean|true|false|
 
 
-### Checkbox Slot
+###  Slot
 
 |名称|说明|
 |---|---|

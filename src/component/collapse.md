@@ -3,7 +3,7 @@
 
 ### API
 
-### Collapse Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -12,7 +12,7 @@
 |border|是否显示外边框|Boolean|true|false|
 
 
-### Collapse Item Props
+### CollapseItem Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -29,7 +29,7 @@
 |duration|面板展开收起的过渡时间，单位`ms`|Number|300|\-|
 
 
-### Collapse Event
+###  Event
 
 注意：请在`<u-collapse></u-collapse>`上监听此事件
 
@@ -40,7 +40,7 @@
 |close|当前激活面板关闭时触发(如果是手风琴模式，参数activeNames类型为String，否则为Array)|activeNames: String|
 
 
-### Collapse Methods
+###  Methods
 
 注意：此方法需要通过`ref`调用
 

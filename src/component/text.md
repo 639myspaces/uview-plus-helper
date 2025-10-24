@@ -7,7 +7,7 @@
 
 ### API
 
-### List Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -33,7 +33,7 @@
 |align|文本对齐方式|String|left|center/right|
 |wordWrap|文字换行|String|normal|break-word/anywhere|
 
-### List Events
+###  Events
 
 |事件名|说明|回调参数|
 |---|---|---|

@@ -3,7 +3,7 @@ Tooltip组件主要用于长按操作，类似微信的长按气泡
 
 ### API
 
-### Tooltip Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -19,7 +19,7 @@ Tooltip组件主要用于长按操作，类似微信的长按气泡
 |overlay|是否显示透明遮罩以防止触摸穿透|Boolean|true|false|
 |showToast|是否显示复制成功或者失败的`toast`|Boolean|true|false|
 
-### Tooltip Events
+###  Events
 
 |事件名|说明|回调参数|
 |---|---|---|

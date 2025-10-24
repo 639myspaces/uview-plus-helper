@@ -12,7 +12,7 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 
 ### API
 
-### Form Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 |labelAlign|lable字体的对齐方式|String|left|center / right|
 |labelStyle|lable的样式，对象形式|Object|\-|\-|
 
-### Form Methods
+###  Methods
 
 此方法如要通过ref手动调用
 
