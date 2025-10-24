@@ -31,6 +31,17 @@ export interface ComponentMeta {
     /** 事件支持的版本 */
     version?: string;
   }>;
+    /**
+   * 组件方法
+   */
+  methods: Array<{
+    /** 事件名称 */
+    name: string;
+    /** 事件描述 */
+    description: string;
+    /** 最低版本要求 */
+    version?: string;
+  }>;
   /** 组件插槽列表（可选） */
   slots?: Array<{ 
     /** 插槽名称 */
@@ -99,6 +110,11 @@ export function loadComponentSchema(componentName: string, docSource?: string): 
           description: event.description,
           version: event.version
         })),
+        methods: componentInfo.methods.map(event => ({
+          name: event.name,
+          description: event.description,
+          version: event.version
+        })),
         slots: componentInfo.slots?.map(slot => ({
           name: slot.name,
           description: slot.description,
@@ -127,6 +143,7 @@ export function loadComponentSchema(componentName: string, docSource?: string): 
       name: `u-${componentName}`,
       props: [],
       events: [],
+      methods: [],
       documentation: loadComponentDoc(componentName, docSource) // 传递文档来源参数，加载原始文档内容
     };
   } catch (error) {
@@ -138,6 +155,7 @@ export function loadComponentSchema(componentName: string, docSource?: string): 
       name: `u-${componentName}`,
       props: [],
       events: [],
+      methods: [],
       documentation: ''
     };
   }
