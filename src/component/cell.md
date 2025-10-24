@@ -1,9 +1,9 @@
 cell单元格一般用于一组列表的情况，比如个人中心页，设置页等。
 
 
-### [#]() API
+### API
 
-### [#]() CellGroup Props
+### CellGroup Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -15,7 +15,7 @@ cell单元格一般用于一组列表的情况，比如个人中心页，设置�
 
 | customStyle | 用户自定义外部样式，对象形式，如{'font-size': '12px'} 或 {'fontSize': '12px'} | object | - | - |
 
-### [#]() Cell Props
+### Cell Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -41,7 +41,7 @@ cell单元格一般用于一组列表的情况，比如个人中心页，设置�
 |stop|点击cell是否阻止事件传播|Boolean|true|false|
 |name|标识符，用于在`click`事件中进行返回|String|Number|\-|
 
-### [#]() Cell Slot
+### Cell Slot
 
 |名称|说明|
 |---|---|
@@ -51,7 +51,7 @@ cell单元格一般用于一组列表的情况，比如个人中心页，设置�
 |right-icon|自定义右侧图标内容，需设置`arrow`为`false`才起作用|
 |label|自定义`label`内容|
 
-### [#]() Cell Event
+### Cell Event
 
 |事件名|说明|回调参数|
 |---|---|---|

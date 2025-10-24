@@ -3,9 +3,9 @@
 本组件功能类似于uni的`uni.showActionSheet`API，配置更加灵活，所有平台都表现一致。
 
 
-## [#]() API
+## API
 
-### [#]() Props
+###  Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -30,7 +30,9 @@
 |showMessageCard|是否显示会话内消息卡片|Boolean|false|true|
 |appParameter|打开 APP 时传递的参数|String|\-|\-|
 
-### [#]() Events
+### Events
+
+**说明**：目前经测试(Hbuilder X 2.6.8)，
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

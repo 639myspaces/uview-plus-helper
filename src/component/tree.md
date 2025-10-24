@@ -1,11 +1,11 @@
-## [#]() Tree 树形组件 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/tree.html#api)
+## Tree 树形组件 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/tree.html#api)
 
 树形结构组件，支持选择、级联、异步加载、搜索过滤与插槽定制等能力。
 
 
-### [#]() API
+### API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|
 |---|---|---|---|
@@ -39,7 +39,7 @@
 |switcher-size|切换图标大小|Number/String|14|
 |switcher-color|切换图标颜色|String|#909399|
 
-### [#]() Events
+### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -48,7 +48,7 @@
 |update:checked-keys|v-model:checked-keys 同步|(checkedKeys: string\[\])|
 |update:expanded-keys|v-model:expanded-keys 同步|(expandedKeys: string\[\])|
 
-### [#]() Slot
+### Slot
 
 |名称|说明|
 |---|---|

@@ -1,9 +1,9 @@
 单选框用于有一个选择，用户只能选择其中一个的场景。
 
 
-## [#]() API
+## API
 
-### [#]() Radio Props
+### Radio Props
 
 注意：`radio` 和 `radio-group` 二者同名参数中，`radio` 的参数优先级更高。
 
@@ -25,7 +25,7 @@
 |activeLabelColor|选中状态下label的颜色|String|\-|\-|
 |plain|镂空样式|Boolean|true|false|
 
-### [#]() RadioGroup Props
+### RadioGroup Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -48,20 +48,20 @@
 |activeLabelColor|选中状态下label的颜色|String|\-|\-|
 |plain|镂空样式|Boolean|true|false|
 
-### [#]() Radio Slot
+### Radio Slot
 
 |名称|说明|
 |---|---|
 |\-(default)|自定义label样式|
 |icon|自定义icon图标|
 
-### [#]() Radio Event
+### Radio Event
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
 |change|某个`radio`状态发生变化时触发(选中状态)|name: 通过`props`传递的`name`参数|\-|
 
-### [#]() RadioGroup Event
+### RadioGroup Event
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

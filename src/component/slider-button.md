@@ -1,11 +1,11 @@
-## [#]() SliderButton 滑动按钮 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/sliderButton.html#api)
+## SliderButton 滑动按钮 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/sliderButton.html#api)
 
 滑动验证按钮组件，常用于验证用户操作，通过滑动滑块到指定位置来完成验证。
 
 
-## [#]() API
+## API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -27,7 +27,7 @@
 |resetDelay|重置延迟时间（毫秒）|Number|2000|\-|
 |threshold|阈值|String|Number|\-|
 
-### [#]() Events
+### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -35,14 +35,14 @@
 |success|滑动验证成功时触发|\-|
 |reset|滑动重置时触发|\-|
 
-### [#]() Slots
+### Slots
 
 |名称|说明|
 |---|---|
 |thumb|自定义滑块内容|
 |default|自定义文字内容|
 
-### [#]() Methods
+### Methods
 
 |方法名|说明|参数|返回值|
 |---|---|---|---|

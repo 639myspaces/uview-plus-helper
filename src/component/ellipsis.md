@@ -1,9 +1,9 @@
 文本过长时，自动省略多余的文本。支持展开/收起功能，可以设置省略位置、自定义省略符号等。
 
 
-## [#]() API
+## API
 
-### [#]() Ellipsis Props
+### Ellipsis Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -19,7 +19,7 @@
 |action-color|展开/收起按钮颜色|String|#3c9cff|\-|
 |custom-style|自定义样式|Object|\-|\-|
 
-### [#]() Ellipsis Events
+### Ellipsis Events
 
 |事件名|说明|回调参数|
 |---|---|---|

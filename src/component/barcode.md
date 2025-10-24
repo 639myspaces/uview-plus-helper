@@ -1,6 +1,6 @@
 基于 [JsBarcode.js (opens new window)](https://github.com/lindell/JsBarcode) 库实现的条形码生成组件，支持多种条形码格式。
 
-## [#]() 使用场景
+## 使用场景
 
 -   商品标签、库存管理等需要条形码的场景
 -   会员卡、优惠券等需要条形码标识的场景
@@ -8,9 +8,9 @@
 -   任何需要生成和显示条形码的应用场景
 
 
-## [#]() API
+## API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -31,7 +31,7 @@
 |customStyle|自定义样式|Object|String|\-|
 |mode 3.6.1|生成模式，图片模式不存在层级问题|String|image|canvas|
 
-### [#]() 支持的条形码类型
+### 支持的条形码类型
 
 根据 [JsBarcode.js (opens new window)](https://github.com/lindell/JsBarcode) 库，支持以下条形码类型：
 

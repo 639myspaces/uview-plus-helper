@@ -1,9 +1,9 @@
 复选框组件一般用于需要多个选择的场景，该组件功能完整，使用方便。
 
 
-## [#]() API
+## API
 
-### [#]() Checkbox Props
+### Checkbox Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -24,7 +24,7 @@
 |activeLabelColor|选中状态下label的颜色|String|\-|\-|
 |plain|镂空样式|Boolean|true|false|
 
-### [#]() CheckboxGroup Props
+### CheckboxGroup Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -47,14 +47,14 @@
 |activeLabelColor|选中状态下label的颜色|String|\-|\-|
 |plain|镂空样式|Boolean|true|false|
 
-### [#]() Checkbox Slot
+### Checkbox Slot
 
 |名称|说明|
 |---|---|
 |\-(default)|自定义label样式|
 |icon|自定义icon图标|
 
-### [#]() CheckboxGroup Event
+### CheckboxGroup Event
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

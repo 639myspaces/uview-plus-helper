@@ -49,7 +49,18 @@ interface ComponentInfo {
     /** 最低版本要求 */
     version?: string;
   }>;
-  
+  /**
+   * 组件方法
+   */
+  methods: Array<{
+    /** 事件名称 */
+    name: string;
+    /** 事件描述 */
+    description: string;
+    /** 最低版本要求 */
+    version?: string;
+  }>;
+
   /**
    * 组件插槽数组（可选）
    */
@@ -333,11 +344,14 @@ export function parseComponentMarkdown(
     // 提取 Props 表格
     const props = extractTableSection(content, "Props");
     // 提取 Events 表格
-    const events = extractTableSection(content, "Events");
+    const events = extractTableSection(content, "Event").concat(
+      extractTableSection(content, "Events")
+    );
     // 提取 Slots 表格（同时处理 Slot 和 Slots 两种可能的标题）
     const slots = extractTableSection(content, "Slot").concat(
       extractTableSection(content, "Slots")
     );
+    const methods = extractTableSection(content, "Methods");
     // 提取外部样式类表格
     const externalClasses = extractTableSection(content, "外部样式类");
     // 提取自定义数据结构表格
@@ -362,6 +376,11 @@ export function parseComponentMarkdown(
       ),
       // 转换事件数据结构
       events: events.map((event) => ({
+        name: event[0],
+        description: event[1] || "",
+        version: event[3] && event[3] !== "-" ? event[3] : undefined,
+      })),
+      methods: methods.map((event) => ({
         name: event[0],
         description: event[1] || "",
         version: event[3] && event[3] !== "-" ? event[3] : undefined,
@@ -473,10 +492,10 @@ function extractTableSection(
 
   /* ===== 2. 模糊匹配：行内包含组件名+标题 ===== */
   if (componentName) {
-    // 将组件名从 kebab-case 转换为 PascalCase
+    // 将组件名从 kebab-case 转换为 Pascal-Case
     const pascal = componentName
       .split("-")
-      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .map((w) => w.charAt(0).toUpperCase() + "-" + w.slice(1))
       .join("");
     // 构建模糊匹配的正则表达式（允许组件名前后有其他字符）
     const fuzzyReg = new RegExp(
@@ -486,20 +505,20 @@ function extractTableSection(
     const m = fuzzyReg.exec(content);
     if (m) {
       const pipe = content.indexOf("|", m.index + m[0].length);
-      if (pipe !== -1) return sliceTable(content, pipe);
+      if (pipe !== -1) {return sliceTable(content, pipe);}
     }
   }
 
   /* ===== 3. 通用回落：纯 "## Attributes" ===== */
   // 如果前面两种匹配都失败，尝试匹配通用的标题格式
   const normalReg = new RegExp(
-    `(?:^|\\n)#{2,3}\\s*${escape(sectionTitle)}\\s*$`,
+    `(?:^|\\n)#{2,3}\\s*[^\\n]*${escape(sectionTitle)}[^\\n]*\\s*$`,
     "im"
   );
   const m = normalReg.exec(content);
   if (m) {
     const pipe = content.indexOf("|", m.index + m[0].length);
-    if (pipe !== -1) return sliceTable(content, pipe);
+    if (pipe !== -1) {return sliceTable(content, pipe);}
   }
 
   // 如果所有匹配都失败，返回空数组

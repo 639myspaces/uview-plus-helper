@@ -11,9 +11,9 @@
 2.  由于微信小程序的限制，在微信小程序中设置了`form-type`的`u-button`无法触发`form`组件的`submit`事件(H5和APP正常)，详见微信小程序文档[Bug & Tip部分 (opens new window)](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)
 
 
-### [#]() API
+### API
 
-### [#]() Props
+### Props
 
 |属性名|说明|类型|默认值|可选值|平台差异说明|
 |---|---|---|---|---|---|
@@ -49,7 +49,7 @@
 |color|按钮颜色，支持传入linear-gradient渐变色|String|\-|\-|\-|
 |customStyle|定义需要用到的外部样式,详细见上方文档|Object|\-|\-|\-|
 
-### [#]() Events
+### Events
 
 **说明**：目前经测试(Hbuilder X 2.6.8)，在H5，APP，可以直接对组件监听`tap`事件，等同组件内部发出的`click`事件效果，某些HX版本上， 微信小程序对组件使用`tap`事件可能无效，故建议对按钮组件的点击事件监听统一使用组件内部发出的`click`事件。
 

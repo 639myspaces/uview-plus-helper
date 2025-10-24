@@ -3,9 +3,9 @@
 本组件基于微信小程序的开放能力，提供统一的用户信息获取界面，支持头像选择和昵称输入。
 
 
-## [#]() API
+## API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -20,7 +20,7 @@
 |maskCloseable|是否允许点击遮罩关闭|Boolean|false|true|
 |confirmText|确认按钮文字|String|'保存'|\-|
 
-### [#]() Events
+### Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
@@ -28,18 +28,18 @@
 |close|关闭弹窗时触发|\-|\-|
 |chooseAvatar|用户选择头像时触发|String: avatarPath|\-|
 
-### [#]() Slots
+### Slots
 
 |插槽名|说明|版本|
 |---|---|---|
 |默认插槽|自定义弹窗内容|\-|
 
-## [#]() 注意事项
+## 注意事项
 
 1.  **平台限制**：本组件仅支持微信小程序平台，其他平台无法使用
 2.  **权限要求**：需要在小程序配置中声明相关权限
 
-## [#]() 相关链接
+## 相关链接
 
 -   [微信小程序用户信息获取 (opens new window)](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/userProfile.html)
 

@@ -1,9 +1,9 @@
 表格组件一般用于展示大量结构化数据的场景，支持数据排序、自定义列内容、行列样式等功能。
 
 
-### [#]() API
+### API
 
-### [#]() Table Props
+### Table Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -31,7 +31,7 @@
 |summaryMethod|自定义的合计计算方法|Function|null|\-|
 |summaryColumns|需要合计的列（prop数组）|Array|\[\]|\-|
 
-### [#]() Table Events
+### Table Events
 
 |事件名称|说明|回调参数|
 |---|---|---|
@@ -41,14 +41,14 @@
 |select|用户手动勾选数据行的 Checkbox 时触发的事件|selection（当前选中行数据的数组）, row（当前行数据）|
 |select-all|用户手动勾选全选 Checkbox 时触发的事件|selection（当前选中行数据的数组）|
 
-### [#]() Table Slots
+### Table Slots
 
 |插槽名称|说明|
 |---|---|
 |default|表格列内容|
 |empty|空数据时的内容|
 
-### [#]() Table Methods
+### Table Methods
 
 |方法名|说明|参数|
 |---|---|---|
@@ -56,7 +56,7 @@
 |clearSelection|用于多选表格，清空用户的选择|\-|
 |getSelectionRows|用于多选表格，返回当前选中的行|\-|
 
-### [#]() Table Column Props
+### Table Column Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -74,19 +74,19 @@
 |headerAlign 3.3.9|表头对齐方式|String|left|left|
 |customStyle|定义需要用到的外部样式|Object|{}|\-|
 
-### [#]() Table Column Events
+### Table Column Events
 
 |事件名称|说明|回调参数|
 |---|---|---|
 |cell-click|单元格点击事件|{ row, column, rowIndex, columnIndex, value }|
 
-### [#]() Table Column Slots
+### Table Column Slots
 
 |插槽名称|说明|参数|
 |---|---|---|
 |default|自定义列的内容|{ row, column, index, value }|
 
-### [#]() 注意事项
+### 注意事项
 
 1.  `u-table-column`组件必须作为`u-table`的直接子组件使用
 2.  表格数据更新时会自动重新渲染

@@ -1,9 +1,9 @@
 级联选择器，用于多级数据的选择，常用于省市区选择、商品分类选择等场景。
 
 
-## [#]() API
+## API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|
 |---|---|---|---|
@@ -30,7 +30,7 @@
 |safeAreaInsetBottom|是否开启底部安全区适配|Boolean|true|
 |itemHeight|选项高度|String|50px|
 
-### [#]() Events
+### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -39,11 +39,11 @@
 |confirm|确认选择时触发（选择到最后一级时）|{value: 选中值数组, label: 选中标签数组, selectedItems: 选中项数组}|
 |selected|选择某一项时触发|{item: 选中项, level: 当前层级, selectedPath: 选择路径}|
 
-### [#]() Options 数据结构
+### Options 数据结构
 
 每个选项应包含以下字段（可通过 `field` 属性自定义）：
 
-## [#]() 注意事项
+## 注意事项
 
 1.  `options` 数据必须是树形结构，每个节点可以包含 `children` 字段
 2.  选中值 `v-model` 可以是单个值或数组，数组表示从根到叶子的完整路径

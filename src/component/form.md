@@ -10,9 +10,9 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 
 
 
-### [#]() API
+### API
 
-### [#]() Form Props
+### Form Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 |labelAlign|lable字体的对齐方式|String|left|center / right|
 |labelStyle|lable的样式，对象形式|Object|\-|\-|
 
-### [#]() Form Methods
+### Form Methods
 
 此方法如要通过ref手动调用
 
@@ -37,7 +37,7 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 |resetFields|对整个表单进行重置，将所有字段值重置为初始值并移除校验结果。注意：vue2模式下，需要使用 `:model.sync`|\-|
 |clearValidate|清空校验结果|Function(props)|
 
-### [#]() Form-item Props
+### Form-item Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -52,7 +52,7 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 |leftIconStyle|左侧自定义字体图标的样式|String|Object|\-|
 |required|是否显示左边的"\*"号，这里仅起展示作用，如需校验必填，请通过`rules`配置必填规则，如需在`swiper`标签内显示星号，需要给予`swiper-item`内第一个根节点一定的`margin`样式|Boolean|false|true|
 
-### [#]() Form-item Slot
+### Form-item Slot
 
 |名称|说明|
 |---|---|
@@ -60,7 +60,7 @@ Vue2模式下，需要兼容微信小程序，并且校验规则中含有方法�
 |right|右侧自定义内容，可以在此传入一个按钮，用于获取验证码等场景|
 |error|自定义传入校验错误时显示的信息，通过作用域插槽暴露了内部当前message错误信息|
 
-### [#]() Form-item Events
+### Form-item Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|

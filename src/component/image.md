@@ -7,9 +7,9 @@
 由于在`nvue`下，`u-image`名称被 uni-app 官方占用，在`nvue`页面中请使用`u-image`名称，在`vue`页面中使用`u-image`或者`u-image`均可。
 
 
-### [#]() API
+### API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -30,14 +30,14 @@
 |duration|搭配`fade`参数的过渡时间，单位 ms|String|Number|500|
 |bgColor|背景颜色，用于深色页面加载图片时，为了和背景色融合|String|#f3f4f6|\-|
 
-### [#]() Slot
+### Slot
 
 |名称|说明|
 |---|---|
 |loading|自定义加载中的提示内容|
 |error|自定义失败的提示内容|
 
-### [#]() CellItem Events
+### CellItem Events
 
 |事件名|说明|回调参数|
 |---|---|---|

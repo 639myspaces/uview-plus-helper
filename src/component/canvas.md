@@ -1,9 +1,9 @@
 Canvas 画布组件，支持2D和WebGL渲染，提供统一的跨平台画布API。
 
 
-## [#]() API
+## API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -14,7 +14,7 @@ webgl（其他平台）|2d|
 |disableScroll|是否禁用滚动|Boolean|false|true|
 |hidpi|是否启用高清|Boolean|true|false|
 
-### [#]() Events
+### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -25,7 +25,7 @@ webgl（其他平台）|2d|
 |onLongtap|长按|event|
 |onError|错误事件|event|
 
-### [#]() Methods
+### Methods
 
 |方法名|说明|参数|返回值|
 |---|---|---|---|
@@ -33,7 +33,7 @@ webgl（其他平台）|2d|
 |queryCanvas|查询画布节点信息|\-|Promise<{node, size}>|
 |canvasToTempFilePath|导出画布为临时文件|options|Promise<string>|
 
-### [#]() canvasToTempFilePath 参数
+### canvasToTempFilePath 参数
 
 |参数|说明|类型|默认值|
 |---|---|---|---|

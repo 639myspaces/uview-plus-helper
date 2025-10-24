@@ -1,9 +1,9 @@
 该组件一般用于同时展示多个商品、分类的场景，也可以完成左右滑动的列表。
 
 
-### [#]() API
+### API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -15,7 +15,7 @@
 |indicatorActiveColor|指示器滑块颜色|String|#3c9cff|\-|
 |indicatorStyle|指示器样式，可通过 bottom，left，right 进行定位|String|Object|\-|
 
-### [#]() Events
+### Events
 
 |事件名|说明|回调参数|
 |---|---|---|

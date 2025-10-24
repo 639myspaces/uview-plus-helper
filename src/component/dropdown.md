@@ -1,9 +1,9 @@
 该组件一般用于向下展开菜单，同时可切换多个选项卡的场景。
 
 
-### [#]() API
+### API
 
-### [#]() Dropdown Props
+### Dropdown Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -22,14 +22,14 @@
 |menuIcon|标题菜单右侧的图标|String|caret-down|\-|
 |menuIconSize|标题菜单右侧的图标的大小，单位任意|String|Number|16|
 
-### [#]() Dropdown Events
+### Dropdown Events
 
 |事件名|说明|回调参数|
 |---|---|---|
 |open|下拉菜单被打开时触发|(index) - 当前被打开菜单的索引|
 |close|下拉菜单被关闭时触发|(index) - 当前被关闭菜单的索引|
 
-### [#]() Dropdown-item Props
+### Dropdown-item Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -40,14 +40,14 @@
 |disabled|是否禁用此选项卡|Boolean|false|true|
 |height|弹窗下拉内容的高度(内容超出将会滚动)，`slot`自定义内容时无效(自行使用`scroll-view`处理)，单位任意|String|Number|auto|
 
-### [#]() Dropdown-item Slot
+### Dropdown-item Slot
 
 |名称|说明|
 |---|---|
 |default|自定义选项卡内容|
 |label 3.6.13|自定义标题区域内容；插槽参数：`{ active }` 表示当前是否激活|
 
-### [#]() Dropdown-item Events
+### Dropdown-item Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -57,7 +57,7 @@
 |close 3.6.13|关闭当前菜单项时触发|\-|
 |closed 3.6.13|关闭菜单项且动画结束后触发|\-|
 
-### [#]() Dropdown Methods
+### Dropdown Methods
 
 这些为组件内部的方法，需要通过`ref`调用
 

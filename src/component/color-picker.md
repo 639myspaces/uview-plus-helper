@@ -1,8 +1,8 @@
-## [#]() ColorPicker 颜色选择器 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/colorPicker.html#api)
+## ColorPicker 颜色选择器 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/colorPicker.html#api)
 
 颜色选择器，一个功能强大的颜色选择组件，支持多种颜色格式，预设颜色，可用于主题定制、样式设计等场景。
 
-## [#]() 使用场景
+## 使用场景
 
 -   当需要用户选择颜色时，如主题定制、样式设计
 -   支持多种使用模式：插入模式和弹出层模式
@@ -10,9 +10,9 @@
 -   支持多种颜色格式：HEX、RGB、HSB等
 
 
-## [#]() API
+## API
 
-### [#]() Props
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -33,9 +33,9 @@
 |showHueSlider|是否显示色调选择器|Boolean|true|false|
 |presets|预设的颜色分组|Array|见下方说明|\-|
 
-### [#]() Presets 预设颜色结构
+### Presets 预设颜色结构
 
-### [#]() Events
+### Events
 
 |事件名|说明|回调参数|
 |---|---|---|
@@ -45,13 +45,13 @@
 |close|弹出层关闭时触发|\-|
 |confirm|点击确认按钮时触发|String (当前选择的颜色值)|
 
-### [#]() Slots
+### Slots
 
 |插槽名|说明|
 |---|---|
 |footer|自定义底部按钮区域|
 
-## [#]() 注意事项
+## 注意事项
 
 1.  组件支持 Vue2 和 Vue3 的 v-model 语法
 2.  在插入模式下，组件会直接渲染在页面中

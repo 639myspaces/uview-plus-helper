@@ -1,9 +1,9 @@
 该组件一般用于页面顶部向下滑出一个提示，尔后自动收起的场景。
 
 
-### [#]() API
+### API
 
-### [#]() Methods
+### Events
 
 |事件名|说明|类型|
 |---|---|---|
@@ -11,7 +11,7 @@
 |primary / success / warning /error|显示当前主题消息提示|Handler|
 |close|关闭消息提示|Handler|
 
-### [#]() Show Methods Arguments
+### Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -24,7 +24,7 @@
 |fontSize|字体大小，单位rpx|String|Number|15|
 |safeAreaInsetTop|是否留出顶部安全距离（状态栏高度）|Boolean|false|true|
 
-### [#]() Slot
+### Slot
 
 |参数|说明|
 |---|---|

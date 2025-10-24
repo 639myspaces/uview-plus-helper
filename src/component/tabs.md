@@ -1,11 +1,11 @@
-## [#]() Tabs 标签 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/tabs.html#api)
+## Tabs 标签 [![](http://118.25.198.98/common/to_api.png)](http://118.25.198.98/components/tabs.html#api)
 
 该组件，是一个tabs标签组件，在标签多的时候，可以配置为左右滑动，标签少的时候，可以禁止滑动。 该组件的一个特点是配置为滚动模式时，激活的tab会自动移动到组件的中间位置。
 
 
-### [#]() API
+### API
 
-### [#]() u-tabs Props
+### u-tabs Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -25,7 +25,7 @@
 |swipeable 3.5.38|是否启用左右滑动切换，注意仅子组件方式有效|
 |height 3.5.38|内容高度|
 
-### [#]() u-tabs Events
+### u-tabs Events
 
 |事件名|说明|回调参数|版本|
 |---|---|---|---|
@@ -33,7 +33,7 @@
 |change|标签索引改变时触发(`disabled`时不会触发)|index: 标签索引值，item: 传入的其他值|\-|
 |longPress|长按标签时触发|index: 标签索引值，item: 传入的其他值|\-|
 
-### [#]() u-tabs-item Props
+### u-tabs-item Props
 
 |参数|说明|类型|默认值|可选值|
 |---|---|---|---|---|
@@ -43,7 +43,7 @@
 |dot|是否显示圆点，将会覆盖badge参数|Boolean|false|true|
 |customStyle|定义需要用到的外部样式|Object|{}|\-|
 
-### [#]() u-tabs Slots
+### u-tabs Slots
 
 |名称|说明|
 |---|---|
