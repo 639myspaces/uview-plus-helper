@@ -1,9 +1,9 @@
 {
   "name": "uview-next-helper",
-  "displayName": "uView Next 代码提示助手",
+  "displayName": "uview-next 代码提示助手",
   "publisher": "uview-next",
   "description": "🚀 一个为 uView Next  组件库提供智能提示的 VS Code 插件",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "哈哈先生",
